@@ -84,7 +84,7 @@ a {
     text-align: center;
     font-size: 32.2px;
     letter-spacing: 0px;
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .hero .hero_img {
     position: relative;
@@ -92,7 +92,7 @@ a {
   .hero .hero_img img {
     position: absolute;
     width: 490px;
-    top: -130px;
+    top: -100px;
     left: -60px;
   }
   .hero .hero_price {
@@ -109,7 +109,7 @@ a {
             align-items: flex-end;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: 50vh;
+    margin-top: 55vh;
   }
   .hero .hero_price .price_word {
     font-size: 17px;
@@ -221,4 +221,100 @@ a {
   .hero .hero_price .hero_price-btn:hover {
     background: #63683F;
   }
+}
+/*****************description*************/
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  padding-bottom: 35px;
+  background-image: url("../assets/img/Rectangle 23.png");
+}
+.description .description_li {
+  text-align: center;
+}
+
+/******for-whom****************/
+.for-whom {
+  background-image: url("../assets/img/Rectangle 23.png");
+  color: white;
+}
+.for-whom .for-whom_h2 {
+  font-size: 25px;
+  text-align: center;
+}
+.for-whom .for-whom_body {
+  background-image: url("../assets/img/Group 522.png");
+  background-position: 0%;
+  border: 1px solid rgba(252, 207, 156, 0.2823529412);
+  border-radius: 15px;
+  padding: 10px;
+}
+.for-whom .for-whom_body .for-whom_border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(252, 207, 156, 0.2823529412);
+  border-radius: 15px;
+  padding: 5px;
+}
+.for-whom .for-whom_body .for-whom_border .for-whom_body_part_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.for-whom .for-whom_body .for-whom_border .for-whom_body_part_title .for-whom_body_number-img {
+  width: 55px;
+  margin-right: 5px;
+}
+.for-whom .for-whom_body .for-whom_border .for-whom_body_part_title .for-whom_body_h3 {
+  font-size: 18px;
+  color: #93A035;
+}
+.for-whom .for-whom_body .for-whom_border .for-whom_body_part_ul .for-whom_body_part_ul_li {
+  margin-top: 7px;
+}
+
+/*****prognostic*******/
+.prognostic {
+  background-image: url("../assets/img/Rectangle 23.png");
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.prognostic .prognostic_h2 {
+  text-align: center;
+}
+.prognostic .prognostic_p {
+  text-align: center;
 }
