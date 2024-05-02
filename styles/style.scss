@@ -60,9 +60,10 @@ a {
     }
 
     .hero {
-        height: 775px;
+        // height: 775px;
         background-image: url('../assets/img/Rectangle\ 23.png');
         background-position: -10px;
+        padding-bottom: 20px;
 
         .hero_h2 {
             position: relative;
@@ -106,13 +107,13 @@ a {
         }
 
         .hero_price {
-            // border: $border;
             position: relative;
             display: flex;
             flex-direction: row;
             align-items: flex-end;
             flex-wrap: wrap;
-            margin-top: 55vh;
+            margin-top: 420px;
+
 
             .price_word {
                 font-size: 17px;
@@ -189,6 +190,7 @@ a {
                 align-items: center;
                 font-size: 17px;
                 font-weight: bold;
+                gap: 5px;
                 letter-spacing: 0px;
                 width: 300px;
                 height: 55px;
@@ -252,6 +254,7 @@ a {
             border: 1px solid #fccf9c48;
             border-radius: 15px;
             padding: 5px;
+
             .for-whom_body_part_title {
                 display: flex;
                 flex-direction: row;
@@ -262,11 +265,13 @@ a {
                     width: 55px;
                     margin-right: 5px;
                 }
+
                 .for-whom_body_h3 {
                     font-size: 18px;
                     color: #93A035;
                 }
             }
+
             .for-whom_body_part_ul {
                 .for-whom_body_part_ul_li {
                     margin-top: 7px;
@@ -282,10 +287,168 @@ a {
     background-image: url('../assets/img/Rectangle\ 23.png');
     padding-top: 30px;
     padding-bottom: 30px;
+
     .prognostic_h2 {
         text-align: center;
     }
+
     .prognostic_p {
         text-align: center;
+    }
+}
+
+/****about-author***********/
+
+.about-author {
+
+    .about-author_h2 {
+        text-align: center;
+    }
+
+    .about-author_body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 700px;
+        background-image: url('../assets/img/photo_2024-04-18_22-28-07.jpg');
+        background-size: 600px;
+        background-repeat: no-repeat;
+        background-position: -170px -130px;
+
+        .about-author_body_p {
+            text-align: right;
+            color: black;
+            font-size: 16px;
+            padding-bottom: 0;
+            text-shadow: rgb(255, 255, 255) 1px 0px 50px;
+            background-color: rgba(255, 255, 255, 0.404);
+        }
+    }
+}
+
+/****what-you-get*******/
+.what-you-get {
+    background-image: url('../assets/img/Rectangle\ 23.png');
+    padding-top: 35px;
+
+    .what-you-get_h2 {
+        text-align: center;
+    }
+
+    .what-you-get_body {
+        background-image: url('../assets/img/Group\ 522.png');
+        background-position: 1%;
+        background-size: cover;
+        border: 1px solid #fccf9c48;
+        border-radius: 15px;
+        padding: 10px;
+        color: white;
+
+        .what-you-get_body_inside {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #fccf9c48;
+            border-radius: 15px;
+            padding: 5px;
+
+            .what-you-get_body_inside_part {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 10px;
+                padding: 10px;
+
+                .what-you-get_body_inside_part_img-number {
+                    width: 70px;
+                }
+
+                .what-you-get_body_inside_part_h3 {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #93A035;
+                }
+
+                .what-you-get_body_inside_part_p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+/******buy-course*********/
+
+.buy-course {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../assets/img/Rectangle\ 23.png');
+
+    .buy-course_h2 {
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .buy-course_p {
+        font-size: 17px;
+        text-align: center;
+
+    }
+
+    span {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 21px;
+
+    }
+
+    .buy-course_price {
+        font-size: 45px;
+        font-weight: bold;
+        color: #93A035;
+        text-align: center;
+        // text-shadow: rgb(0, 0, 0) 1px 0px 0px;
+    }
+    .buy-course_old-price {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        span {
+           text-decoration: line-through;
+        }
+    }
+    .buy-course_btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 17px;
+        font-weight: bold;
+        letter-spacing: 0px;
+        width: 300px;
+        height: 55px;
+        background: rgb(127, 136, 54);
+        background: radial-gradient(circle, rgb(150, 163, 50) 0%, rgba(121, 126, 80, 1) 100%);
+        border-radius: 7px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+        margin-top: 20px;
+        cursor: pointer;
+
+        &:hover {
+            background: #63683F;
+        }
+    }
+
+    .buy-course_description {
+        margin-top: 20px;
+        font-size: 13px;
+        font-weight: bold;
     }
 }
