@@ -516,6 +516,7 @@ a {
   padding-bottom: 25px;
 }
 .course-information .course-information_h2 {
+  text-transform: uppercase;
   text-align: center;
 }
 .course-information .course-information_item {
