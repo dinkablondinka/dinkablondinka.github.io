@@ -111,6 +111,7 @@ a {
             display: flex;
             flex-direction: row;
             align-items: flex-end;
+            justify-content: center;
             flex-wrap: wrap;
             margin-top: 420px;
 
@@ -118,6 +119,7 @@ a {
             .price_word {
                 font-size: 17px;
                 font-weight: bold;
+                margin-left: -10vw;
             }
 
             .price_current-price {
@@ -414,14 +416,17 @@ a {
         text-align: center;
         // text-shadow: rgb(0, 0, 0) 1px 0px 0px;
     }
+
     .buy-course_old-price {
         font-size: 20px;
         font-weight: bold;
         text-align: center;
+
         span {
-           text-decoration: line-through;
+            text-decoration: line-through;
         }
     }
+
     .buy-course_btn {
         display: flex;
         flex-direction: row;
@@ -450,5 +455,88 @@ a {
         margin-top: 20px;
         font-size: 13px;
         font-weight: bold;
+    }
+}
+
+/*****course-information******/
+
+.course-information {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-image: url('../assets/img/Rectangle\ 23.png');
+    padding-bottom: 25px;
+
+    .course-information_h2 {
+        text-align: center;
+    }
+
+    .course-information_item {
+        border: 1px solid #93A035;
+        border-radius: 15px;
+        min-height: 110px;
+        padding: 25px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        .course-information_item_h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #93A035;
+            text-align: center;
+        }
+
+        .course-information_item_ul {
+            .course-information_item_li {
+                font-size: 16px;
+                margin-bottom: 5px;
+
+                &::marker {
+                    color: #7B804E;
+                }
+            }
+        }
+    }
+}
+
+/*****after-study******/
+
+.after-study {
+    background-image: url('../assets/img/Rectangle\ 23.png');
+    padding-bottom: 25px;
+
+    .after-study_h2 {
+        text-align: center;
+    }
+
+    .after-study_item {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 30px;
+
+        .after-study_item_img {
+            width: 55px;
+        }
+
+        .after-study_item_text {
+            font-size: 16px;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 80px;
+    width: 100%;
+    background-image: url('../assets/img/Rectangle\ 23.png');
+    .footer_link {
+        img {
+            width: 45px;
+        }
     }
 }

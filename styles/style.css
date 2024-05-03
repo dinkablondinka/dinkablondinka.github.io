@@ -107,6 +107,9 @@ a {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-top: 420px;
@@ -114,6 +117,7 @@ a {
   .hero .hero_price .price_word {
     font-size: 17px;
     font-weight: bold;
+    margin-left: -10vw;
   }
   .hero .hero_price .price_current-price {
     display: -webkit-box;
@@ -496,4 +500,92 @@ a {
   margin-top: 20px;
   font-size: 13px;
   font-weight: bold;
+}
+
+/*****course-information******/
+.course-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  background-image: url("../assets/img/Rectangle 23.png");
+  padding-bottom: 25px;
+}
+.course-information .course-information_h2 {
+  text-align: center;
+}
+.course-information .course-information_item {
+  border: 1px solid #93A035;
+  border-radius: 15px;
+  min-height: 110px;
+  padding: 25px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.course-information .course-information_item .course-information_item_h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #93A035;
+  text-align: center;
+}
+.course-information .course-information_item .course-information_item_ul .course-information_item_li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.course-information .course-information_item .course-information_item_ul .course-information_item_li::marker {
+  color: #7B804E;
+}
+
+/*****after-study******/
+.after-study {
+  background-image: url("../assets/img/Rectangle 23.png");
+  padding-bottom: 25px;
+}
+.after-study .after-study_h2 {
+  text-align: center;
+}
+.after-study .after-study_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
+  margin-top: 30px;
+}
+.after-study .after-study_item .after-study_item_img {
+  width: 55px;
+}
+.after-study .after-study_item .after-study_item_text {
+  font-size: 16px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  height: 80px;
+  width: 100%;
+  background-image: url("../assets/img/Rectangle 23.png");
+}
+footer .footer_link img {
+  width: 45px;
 }
