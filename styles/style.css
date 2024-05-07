@@ -95,6 +95,51 @@ a {
     background-clip: text;
     color: transparent;
   }
+}
+@media (max-width: 470px) and (max-width: 390px) {
+  .hero {
+    background-color: transparent;
+  }
+}
+@media (max-width: 470px) {
+  .hero .hero_imgs .hero_imgs_1 {
+    position: absolute;
+    top: -120px;
+    left: 2%;
+    width: 94%;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    -webkit-box-shadow: #1C1A1F 0px 5px 20px;
+            box-shadow: #1C1A1F 0px 5px 20px;
+  }
+  .hero .hero_imgs .hero_imgs_2 {
+    position: absolute;
+    top: 500px;
+    right: 0px;
+    width: 140px;
+  }
+}
+@media (max-width: 470px) and (max-width: 450px) {
+  .hero .hero_imgs .hero_imgs_1 {
+    top: -70px;
+  }
+}
+@media (max-width: 470px) and (max-width: 430px) {
+  .hero .hero_imgs .hero_imgs_1 {
+    top: -30px;
+  }
+}
+@media (max-width: 470px) and (max-width: 390px) {
+  .hero .hero_imgs .hero_imgs_1 {
+    position: absolute;
+    top: -120px;
+    left: 2%;
+    width: 94%;
+    border-bottom-right-radius: 180px;
+    border-bottom-left-radius: 180px;
+    -webkit-box-shadow: #1C1A1F 0px 5px 20px;
+            box-shadow: #1C1A1F 0px 5px 20px;
+  }
   .hero .hero_imgs .hero_imgs_1 {
     position: absolute;
     top: -20px;
@@ -111,6 +156,8 @@ a {
     right: 0px;
     width: 100px;
   }
+}
+@media (max-width: 470px) {
   .hero .hero_price {
     position: relative;
     display: -webkit-box;
@@ -277,7 +324,7 @@ a {
   color: white;
   overflow: hidden;
   background-color: #2C2C2E;
-  border-radius: 55px;
+  border-radius: 95px;
   padding-bottom: 25px;
 }
 .for-whom .for-whom_h2 {
@@ -348,7 +395,7 @@ a {
   font-weight: bold;
 }
 .for-whom .for-whom_body .for-whom_border .for-whom_body_part_title .h3_first {
-  margin-top: 75px;
+  margin-top: 95px;
 }
 .for-whom .for-whom_body .for-whom_border .for-whom_body_part_title .h3_second {
   margin-top: 35px;
@@ -491,7 +538,6 @@ a {
   background-image: url("../assets/img/hero/bg1.jpg");
   background-position: 1%;
   background-size: cover;
-  border: 1px solid rgba(252, 207, 156, 0.2823529412);
   border-radius: 25px;
   padding: 10px;
   color: white;
@@ -667,7 +713,6 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 25% 25%;
-  border: 1px solid rgba(180, 147, 120, 0.662745098);
   border-radius: 20px;
   min-height: 110px;
   padding: 20px;
