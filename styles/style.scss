@@ -681,6 +681,8 @@ a {
         padding: 20px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         color: white;
+        width: 95%;
+        margin: 0 auto;
 
         .course-information_item_h3 {
             font-size: 18px;
@@ -698,6 +700,7 @@ a {
             padding: 25px 15px;
             border-radius: 20px;
             background-color: rgba(0, 0, 0, 0.678);
+            
 
             .course-information_item_li {
                 font-size: 16px;
