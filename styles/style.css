@@ -105,7 +105,7 @@ a {
   .hero .hero_imgs .hero_imgs_1 {
     position: absolute;
     top: -120px;
-    left: 2%;
+    left: 3%;
     width: 94%;
     border-bottom-right-radius: 200px;
     border-bottom-left-radius: 200px;
@@ -324,8 +324,9 @@ a {
   color: white;
   overflow: hidden;
   background-color: #2C2C2E;
-  border-radius: 95px;
+  border-radius: 25px;
   padding-bottom: 25px;
+  width: 95%;
 }
 .for-whom .for-whom_h2 {
   font-size: 25px;
@@ -525,6 +526,7 @@ a {
 .what-you-get {
   padding: 0;
   padding-top: 35px;
+  width: 95%;
 }
 .what-you-get .what-you-get_h2 {
   text-align: center;
