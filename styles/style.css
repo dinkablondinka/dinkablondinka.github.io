@@ -329,7 +329,7 @@ a {
   width: 95%;
 }
 .for-whom .for-whom_h2 {
-  font-size: 25px;
+  font-size: 140%;
   text-align: center;
   background-image: -webkit-gradient(linear, left top, right top, from(white), to(#B49378));
   background-image: linear-gradient(to right, white, #B49378);
@@ -526,7 +526,7 @@ a {
 .what-you-get {
   padding: 0;
   padding-top: 35px;
-  width: 95%;
+  width: 97%;
 }
 .what-you-get .what-you-get_h2 {
   text-align: center;
