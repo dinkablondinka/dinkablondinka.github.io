@@ -108,7 +108,7 @@ header {
 }
 .hero .hero_imgs .hero_imgs_1 {
   position: absolute;
-  top: -120px;
+  top: -110px;
   left: 3%;
   width: 94%;
   border-bottom-right-radius: 200px;
@@ -118,9 +118,12 @@ header {
 }
 .hero .hero_imgs .hero_imgs_2 {
   position: absolute;
-  top: 500px;
-  right: 0px;
+  top: 480px;
+  right: 25px;
   width: 140px;
+  border-radius: 50%;
+  -webkit-box-shadow: #1C1A1F 0px 0px 15px;
+          box-shadow: #1C1A1F 0px 0px 15px;
 }
 @media (min-width: 471px) {
   .hero .hero_imgs .hero_imgs_1 {
@@ -129,7 +132,7 @@ header {
     width: 60%;
   }
   .hero .hero_imgs .hero_imgs_2 {
-    top: 530px;
+    top: 500px;
     right: 120px;
     width: 180px;
   }
@@ -167,9 +170,9 @@ header {
   }
   .hero .hero_imgs .hero_imgs_2 {
     position: absolute;
-    top: 530px;
-    right: 0px;
-    width: 100px;
+    top: 505px;
+    right: 25px;
+    width: 120px;
   }
 }
 .hero .hero_price {
