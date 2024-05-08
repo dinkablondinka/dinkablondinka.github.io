@@ -38,97 +38,113 @@ a {
   color: black;
 }
 
-@media (max-width: 470px) {
-  .container {
-    margin: 0 auto;
-    max-width: 1624px;
-    overflow-x: hidden;
-    padding: 0 5%;
-  }
-  header {
-    border: 1px solid red;
-    width: 100%;
-    height: 90px;
-  }
-  /*******************hero*************************/
-  .hero {
-    position: relative;
-    overflow: hidden;
-  }
-  .hero .hero_h2 {
-    position: relative;
-    z-index: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 60px;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  .hero .hero_h2 .bubble-second {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-  }
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  overflow-x: hidden;
+  padding: 0 5%;
+}
+
+header {
+  border: 1px solid red;
+  width: 100%;
+  height: 90px;
+}
+/*******************hero*************************/
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+.hero .hero_h2 {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.hero .hero_h2 .bubble-second {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+.hero .hero_h1 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  letter-spacing: 0px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 25px;
+  word-spacing: 5px;
+  text-shadow: rgb(0, 0, 0) 1px 0px 50px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  color: #ffffff;
+}
+@media (min-width: 471px) {
   .hero .hero_h1 {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    letter-spacing: 0px;
-    margin-top: 20px;
-    text-transform: uppercase;
-    font-size: 25px;
-    word-spacing: 5px;
-    text-shadow: rgb(0, 0, 0) 1px 0px 50px;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    color: #ffffff;
+    width: 78%;
+    font-size: 23px;
+    margin: 20px auto 0;
   }
 }
-@media (max-width: 470px) and (max-width: 390px) {
+@media (max-width: 390px) {
   .hero {
     background-color: transparent;
   }
 }
-@media (max-width: 470px) {
+.hero .hero_imgs .hero_imgs_1 {
+  position: absolute;
+  top: -120px;
+  left: 3%;
+  width: 94%;
+  border-bottom-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+  -webkit-box-shadow: #1C1A1F 0px 5px 20px;
+          box-shadow: #1C1A1F 0px 5px 20px;
+}
+.hero .hero_imgs .hero_imgs_2 {
+  position: absolute;
+  top: 500px;
+  right: 0px;
+  width: 140px;
+}
+@media (min-width: 471px) {
   .hero .hero_imgs .hero_imgs_1 {
-    position: absolute;
-    top: -120px;
-    left: 3%;
-    width: 94%;
-    border-bottom-right-radius: 200px;
-    border-bottom-left-radius: 200px;
-    -webkit-box-shadow: #1C1A1F 0px 5px 20px;
-            box-shadow: #1C1A1F 0px 5px 20px;
+    top: -100px;
+    left: 19%;
+    width: 60%;
   }
   .hero .hero_imgs .hero_imgs_2 {
-    position: absolute;
-    top: 500px;
-    right: 0px;
-    width: 140px;
+    top: 530px;
+    right: 120px;
+    width: 180px;
   }
 }
-@media (max-width: 470px) and (max-width: 450px) {
+@media (max-width: 450px) {
   .hero .hero_imgs .hero_imgs_1 {
     top: -70px;
   }
 }
-@media (max-width: 470px) and (max-width: 430px) {
+@media (max-width: 430px) {
   .hero .hero_imgs .hero_imgs_1 {
     top: -30px;
   }
 }
-@media (max-width: 470px) and (max-width: 390px) {
+@media (max-width: 390px) {
   .hero .hero_imgs .hero_imgs_1 {
     position: absolute;
     top: -120px;
@@ -156,137 +172,141 @@ a {
     width: 100px;
   }
 }
-@media (max-width: 470px) {
-  .hero .hero_price {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-top: 540px;
-  }
-  .hero .hero_price .price_word {
-    font-size: 17px;
-    font-weight: bold;
-    margin-left: -10vw;
-  }
-  .hero .hero_price .price_current-price {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 0px;
-    width: 95px;
-    height: 40px;
-    border: 2px solid #63683F;
-    border-radius: 5px;
-    margin-left: 10px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  .hero .hero_price .price_current-price span {
-    margin-top: 4px;
-    font-size: 16px;
-  }
-  .hero .hero_price .price_old-price {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 0px;
-    width: 100px;
-    height: 40px;
-    border-radius: 5px;
-    margin-left: 10px;
-  }
-  .hero .hero_price .price_old-price span {
-    margin-top: 4px;
-    font-size: 16px;
-  }
-  .hero .hero_price .price_old-price .price_old-price-cross-1,
-  .hero .hero_price .price_old-price .price_old-price-cross-2 {
-    position: absolute;
-    border-top: 2px solid #C57069;
-    width: 80px;
-    border-bottom: 0;
-  }
-  .hero .hero_price .price_old-price .price_old-price-cross-1 {
-    -webkit-transform: rotate(161deg);
-    -moz-transform: rotate(161deg);
-    -ms-transform: rotate(161deg);
-    -o-transform: rotate(161deg);
-  }
-  .hero .hero_price .price_old-price .price_old-price-cross-2 {
-    -webkit-transform: rotate(-161deg);
-    -moz-transform: rotate(-161deg);
-    -ms-transform: rotate(-161deg);
-    -o-transform: rotate(-161deg);
-  }
+.hero .hero_price {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 540px;
+}
+.hero .hero_price .price_word {
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: -10vw;
+}
+.hero .hero_price .price_current-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  width: 95px;
+  height: 40px;
+  border: 2px solid #63683F;
+  border-radius: 5px;
+  margin-left: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.hero .hero_price .price_current-price span {
+  margin-top: 4px;
+  font-size: 16px;
+}
+.hero .hero_price .price_old-price {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.hero .hero_price .price_old-price span {
+  margin-top: 4px;
+  font-size: 16px;
+}
+.hero .hero_price .price_old-price .price_old-price-cross-1,
+.hero .hero_price .price_old-price .price_old-price-cross-2 {
+  position: absolute;
+  border-top: 2px solid #C57069;
+  width: 80px;
+  border-bottom: 0;
+}
+.hero .hero_price .price_old-price .price_old-price-cross-1 {
+  -webkit-transform: rotate(161deg);
+  -moz-transform: rotate(161deg);
+  -ms-transform: rotate(161deg);
+  -o-transform: rotate(161deg);
+}
+.hero .hero_price .price_old-price .price_old-price-cross-2 {
+  -webkit-transform: rotate(-161deg);
+  -moz-transform: rotate(-161deg);
+  -ms-transform: rotate(-161deg);
+  -o-transform: rotate(-161deg);
+}
+.hero .hero_price .hero_price-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
+  font-weight: bold;
+  gap: 5px;
+  letter-spacing: 0px;
+  width: 300px;
+  height: 55px;
+  background: radial-gradient(circle, #F3EAE1 0%, #af8961 100%);
+  border-radius: 7px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: -10px auto 20px;
+  cursor: pointer;
+}
+.hero .hero_price .hero_price-btn:hover {
+  background: #63683F;
+}
+@media (min-width: 471px) {
   .hero .hero_price .hero_price-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 17px;
-    font-weight: bold;
-    gap: 5px;
-    letter-spacing: 0px;
-    width: 300px;
-    height: 55px;
-    background: radial-gradient(circle, #F3EAE1 0%, #af8961 100%);
-    border-radius: 7px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin: 20px auto;
-    cursor: pointer;
-  }
-  .hero .hero_price .hero_price-btn:hover {
-    background: #63683F;
+    margin: 80px auto 20px;
   }
 }
+
 /*****************description*************/
 .description {
   display: -webkit-box;
@@ -396,6 +416,11 @@ a {
 }
 .for-whom .for-whom_body .for-whom_border .for-whom_body_part_title .h3_first {
   margin-top: 95px;
+}
+@media (min-width: 471px) {
+  .for-whom .for-whom_body .for-whom_border .for-whom_body_part_title .h3_first {
+    margin-top: 195px;
+  }
 }
 .for-whom .for-whom_body .for-whom_border .for-whom_body_part_title .h3_second {
   margin-top: 35px;

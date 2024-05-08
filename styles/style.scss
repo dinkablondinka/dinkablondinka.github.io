@@ -43,10 +43,10 @@ a {
     color: black;
 }
 
-// @media(max-width: 470px) {
+
     .container {
         margin: 0 auto;
-        max-width: 1624px;
+        max-width: 800px;
         overflow-x: hidden;
         padding: 0 5%;
     }
@@ -104,9 +104,14 @@ a {
             background-clip: text;
             color: transparent;
             color: #ffffff;
-
         }
-
+        @media(min-width: 471px) {
+            .hero_h1 {
+                width: 78%;
+                font-size: 23px;
+                margin: 20px auto 0;
+            }
+        }
         @media(max-width: 390px) {
             background-color: transparent;
         }
@@ -127,6 +132,18 @@ a {
                 top: 500px;
                 right: 0px;
                 width: 140px;
+            }
+            @media(min-width: 471px) {
+                .hero_imgs_1 {
+                    top: -100px;
+                    left: 19%;
+                    width: 60%;
+                }
+                .hero_imgs_2 {
+                    top: 530px;
+                    right: 120px;
+                    width: 180px;
+                }
             }
 
             @media(max-width: 450px) {
@@ -265,7 +282,7 @@ a {
                 background: radial-gradient(circle, #F3EAE1 0%, #af8961 100%);
                 border-radius: 7px;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                margin: 20px auto;
+                margin: -10px auto 20px;
                 // margin-top: 20px;
                 cursor: pointer;
 
@@ -273,9 +290,14 @@ a {
                     background: #63683F;
                 }
             }
+            @media(min-width: 471px) {
+                .hero_price-btn {
+                    margin: 80px auto 20px;
+                }
+            }
         }
     }
-}
+
 
 
 /*****************description*************/
@@ -373,6 +395,11 @@ a {
 
                 .h3_first {
                     margin-top: 95px;
+                }
+                @media(min-width: 471px) {
+                    .h3_first {
+                        margin-top: 195px;
+                    }
                 }
 
                 .h3_second {
