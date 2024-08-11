@@ -280,7 +280,7 @@ section {
 
     @keyframes glow {
         from {
-            text-shadow: 4px 4px 25px rgba(255, 255, 255, 0.918);        }
+            text-shadow: 4px 4px 25px rgb(255, 255, 255);        }
         to {
             text-shadow: none;        }
       }
