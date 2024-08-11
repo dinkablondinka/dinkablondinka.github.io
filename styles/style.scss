@@ -17,7 +17,6 @@ html {
 body {
     margin: 0 auto;
     background-color: white;
-    // width: 100vw;
     overflow-x: hidden;
     font-family: 'Manrope', sans-serif;
     color: #4F410D;
@@ -215,10 +214,10 @@ section {
             margin-left: -35vw;
             text-transform: uppercase;
 
-            -webkit-transform: rotate(90deg);
-            -moz-transform: rotate(90deg);
-            -o-transform: rotate(90deg);
-            -ms-transform: rotate(90deg);
+            -webkit-transform: rotate(80deg);
+            -moz-transform: rotate(80deg);
+            -o-transform: rotate(80deg);
+            -ms-transform: rotate(80deg);
             transform: rotate(80deg);
 
             @media (min-width: 471px) {
