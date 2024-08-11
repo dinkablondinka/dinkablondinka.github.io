@@ -15,8 +15,7 @@ html {
 body {
   margin: 0 auto;
   background-color: white;
-  width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: "Manrope", sans-serif;
   color: #4F410D;
 }
