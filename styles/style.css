@@ -170,10 +170,8 @@ section {
 }
 .hero .hero-text_wrapper .hero-text_h1 {
   border: 1px solid red;
-  text-transform: none;
   font-size: 40px;
-  text-align: right;
-  letter-spacing: 2px;
+  text-align: center;
   margin-top: 100px;
   margin-bottom: 0;
   width: 100%;
