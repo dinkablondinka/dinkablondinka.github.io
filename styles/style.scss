@@ -265,3 +265,134 @@ section {
 
     }
 }
+
+
+.program {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .program_h1 {
+        margin-top: 80px;
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+
+    .program_ul {
+        .program_ul_li {
+            font-size: 18px;
+        }
+    }
+
+    .hero_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #8B8B55;
+        color: white;
+        text-transform: uppercase;
+        height: 70px;
+        width: 260px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        letter-spacing: 1px;
+
+
+        &:hover {
+            cursor: pointer;
+            background-color: #555537;
+        }
+
+    }
+
+
+    /******************slider*******************/
+
+.slider-container {
+    position: relative;
+    width: 370px;
+    overflow: hidden;
+    margin-bottom: 45px;
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    box-sizing: border-box;
+    height: 650px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  
+  /* Optional: Add styling for navigation buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -25px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Optional: Add styling for dots navigation */
+  .dots {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .dot.active {
+    background-color: #717171;
+  }
+  
+  #slide-1 {
+    background-image: url('/assets/img/new/1.jpg');
+  }
+  
+  #slide-2 {
+    background-image: url('/assets/img/new/2.jpg');
+  }
+  
+  #slide-3 {
+    background-image: url('/assets/img/new/3.jpg');
+  }
+  
+  #slide-4 {
+    background-image: url('/assets/img/new/4.jpg');
+  }
+  
+  
+}

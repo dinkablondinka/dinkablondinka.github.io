@@ -8,7 +8,7 @@
    <meta name="keywords" content="">
    <meta name="description" content="">
 
-   <link rel="stylesheet" href="./styles/style.css">
+   <link rel="stylesheet" href="../styles/style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,12 +32,53 @@
 <body>
 
    <main>
-      
+      <div class="program">
+         <h1 class="program_h1">Навігатор схуднення</h1>
+         <ul class="program_ul">
+            <li class="program_ul_li">Меню на 21 день</li>
+            <li class="program_ul_li">Бади. Як і які обрати</li>
+            <li class="program_ul_li">Міфи в схудненні</li>
+            <li class="program_ul_li">Вся правда про смузі і детокси</li>
+            <li class="program_ul_li">Трекер звичок</li>
+            <li class="program_ul_li">Мікробіом</li>
+            <li class="program_ul_li">Гормони</li>
+            <li class="program_ul_li">Як худнути у відпустці</li>
+            <li class="program_ul_li">Чому дієти не працюють</li>
+            <li class="program_ul_li">Секрети схуднення без заборон</li>
+            <li class="program_ul_li">3 ефективні тренування на тиждень</li>
+            <li class="program_ul_li">Практики антистрес, медитації</li>
+            <li class="program_ul_li">Зворотній зв'язок і підтримка віде мене</li>
+            <li class="program_ul_li">Подарунок за участь</li>
+            <li class="program_ul_li">Beauty подарунок за результат</li>
+         </ul>
+
+         <a target="_blank" href="https://t.me/vln12345i" class="hero_btn">
+            Оплата
+         </a>
+
+
+         <div class="container slider-body">
+            <div class="slider-container">
+               <div class="slider-wrapper" id="slider1">
+                  <div class="slide" id="slide-1"></div>
+                  <div class="slide" id="slide-2"></div>
+                  <div class="slide" id="slide-3"></div>
+                  <div class="slide" id="slide-4"></div>
+               </div>
+   
+               <div class="prev" onclick="prevSlide('slider1')">&#10094;</div>
+               <div class="next" onclick="nextSlide('slider1')">&#10095;</div>
+   
+               <!-- <div class="dots" id="dots-container"></div> -->
+            </div>
+         </div>
+
+      </div>
    </main>
 
 
 
-   <script type="module" src="./js/script.js"></script>
+   <script type="module" src="../js/script.js"></script>
    <script src="./js/wow.min.js"></script>
    <script>
       new WOW().init();
