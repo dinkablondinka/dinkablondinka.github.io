@@ -54,9 +54,9 @@ section {
 .container {
   margin: 0 auto;
   max-width: 470px;
-  overflow: hidden;
+  overflow-x: hidden;
   padding: 0 15px;
-  min-height: 100vh;
+  min-height: 790px;
 }
 @media (min-width: 471px) {
   .container {
@@ -98,9 +98,8 @@ section {
 
 .gradient-red {
   margin: 5px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #B22222), color-stop(30%, #E74C3C), color-stop(70%, #FF6347), color-stop(80%, #E74C3C));
-  background: linear-gradient(to right, #B22222 20%, #E74C3C 30%, #FF6347 70%, #E74C3C 80%);
-  /* Повернення до яскравого червоного */
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #161616), color-stop(40%, #FFA500), color-stop(70%, #FFA500), to(#B22222));
+  background: linear-gradient(to right, #161616 20%, #FFA500 40%, #FFA500 70%, #B22222 100%); /* Золотий */
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -108,7 +107,6 @@ section {
   background-size: 500% auto;
   -webkit-animation: textShine 5s ease-in-out infinite alternate;
           animation: textShine 5s ease-in-out infinite alternate;
-  font-weight: bold;
 }
 
 .hero {
@@ -222,7 +220,7 @@ section {
   font-style: italic;
   color: red;
   font-weight: bold;
-  margin-top: 405px;
+  margin-top: 410px;
   margin-left: -35vw;
   text-transform: uppercase;
   -webkit-transform: rotate(80deg);
@@ -234,6 +232,8 @@ section {
   }
 }
 .hero .hero_btn {
+  position: absolute;
+  bottom: -30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,22 +248,10 @@ section {
   text-transform: uppercase;
   height: 80px;
   width: 280px;
-  margin-top: -15px;
-  margin-bottom: 30px;
 }
 .hero .hero_btn:hover {
   cursor: pointer;
   background-color: #555537;
-}
-@media (max-width: 438px) {
-  .hero .hero_btn {
-    margin-top: 15px;
-  }
-}
-@media (max-width: 375px) {
-  .hero .hero_btn {
-    margin-top: 30px;
-  }
 }
 
 .program {

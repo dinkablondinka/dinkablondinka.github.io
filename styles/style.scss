@@ -62,9 +62,9 @@ section {
 .container {
     margin: 0 auto;
     max-width: 470px;
-    overflow: hidden;
+    overflow-x: hidden;
     padding: 0 15px;
-    min-height: 100vh;
+    min-height: 790px;
 
     @media (min-width: 471px) {
         overflow: visible;
@@ -107,14 +107,11 @@ section {
 .gradient-red {
     margin: 5px;
     background: linear-gradient(to right,
-            #B22222 20%,
-            /* Темний червоний */
-            #E74C3C 30%,
-            /* Яскравий червоний */
-            #FF6347 70%,
-            /* Томатний */
-            #E74C3C 80%);
-    /* Повернення до яскравого червоного */
+            #161616 20%,  /* Темний червоний */
+            #FFA500 40%,  /* Яскравий червоний */
+            #FFA500 70%,  /* Яскравий помаранчевий */
+            #B22222 100%); /* Золотий */
+
 
 
     -webkit-background-clip: text;
@@ -123,7 +120,7 @@ section {
     text-fill-color: transparent;
     background-size: 500% auto;
     animation: textShine 5s ease-in-out infinite alternate;
-    font-weight: bold;
+    // font-weight: bold;
 }
 
 
@@ -247,7 +244,7 @@ section {
             font-style: italic;
             color: red;
             font-weight: bold;
-            margin-top: 405px;
+            margin-top: 410px;
             margin-left: -35vw;
             text-transform: uppercase;
 
@@ -264,18 +261,9 @@ section {
         }
     }
 
-    // .hero_img {
-    //     position: absolute;
-    //     max-width: 550px;
-    //     top: 130px;
-    //     left: -80px;
-
-    //     @media (max-width: 375px) {
-    //         top: 100px;
-    //     }
-    // }
-
     .hero_btn {
+        position: absolute;
+        bottom: -30px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -284,21 +272,12 @@ section {
         text-transform: uppercase;
         height: 80px;
         width: 280px;
-        margin-top: -15px;
-        margin-bottom: 30px;
+
 
 
         &:hover {
             cursor: pointer;
             background-color: #555537;
-        }
-
-        @media (max-width: 438px) {
-            margin-top: 15px;
-        }
-
-        @media (max-width: 375px) {
-            margin-top: 30px;
         }
 
     }
