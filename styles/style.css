@@ -171,13 +171,21 @@ section {
   font-size: 44px;
   text-align: center;
   line-height: 40px;
-  margin-top: 85px;
+  margin-top: 75px;
   margin-bottom: 0;
   width: 100%;
   font-weight: normal;
 }
+.hero .hero-text_wrapper .hero-text_h1 .h1_small {
+  font-size: 24px;
+}
 .hero .hero-text_wrapper .hero-text_h1 span {
   font-weight: bold;
+}
+@media (min-width: 470px) {
+  .hero .hero-text_wrapper .hero-text_h1 {
+    font-size: 30px;
+  }
 }
 @media (max-width: 438px) {
   .hero .hero-text_wrapper .hero-text_h1 {
