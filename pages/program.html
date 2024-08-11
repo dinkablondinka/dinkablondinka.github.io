@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+
+   <link rel="stylesheet" href="./styles/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+   <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet">
+   <link rel=”icon” href=”/favicon.png” type=”image/x-icon”>
+   <title>НАВІГАТОР СХУДНЕННЯ</title>
+
+</head>
+
+
+<body>
+
+   <main>
+      
+   </main>
+
+
+
+   <script type="module" src="./js/script.js"></script>
+   <script src="./js/wow.min.js"></script>
+   <script>
+      new WOW().init();
+   </script>
+   <script>
+      let currentSlide1 = 0;
+      let currentSlide2 = 0;
+
+      function showSlide(index, sliderId) {
+         const sliderWrapper = document.getElementById(sliderId);
+         const slides = sliderWrapper.querySelectorAll('.slide');
+         const dotsContainer = document.getElementById(`dots-container${sliderId.charAt(sliderId.length - 1)}`);
+
+         if (sliderId === 'slider1') {
+            currentSlide1 = index;
+         } else if (sliderId === 'slider2') {
+            currentSlide2 = index;
+         }
+
+         sliderWrapper.style.transform = `translateX(${-index * 100}%)`;
+
+         // Optional: Highlight active dot
+         const dots = dotsContainer.querySelectorAll('.dot');
+         dots.forEach(dot => dot.classList.remove('active'));
+         dots[index].classList.add('active');
+      }
+
+      function prevSlide(sliderId) {
+         const sliderWrapper = document.getElementById(sliderId);
+         const slides = sliderWrapper.querySelectorAll('.slide');
+         if (sliderId === 'slider1') {
+            currentSlide1 = (currentSlide1 - 1 + slides.length) % slides.length;
+            showSlide(currentSlide1, sliderId);
+         } else if (sliderId === 'slider2') {
+            currentSlide2 = (currentSlide2 - 1 + slides.length) % slides.length;
+            showSlide(currentSlide2, sliderId);
+         }
+      }
+
+      function nextSlide(sliderId) {
+         const sliderWrapper = document.getElementById(sliderId);
+         const slides = sliderWrapper.querySelectorAll('.slide');
+         if (sliderId === 'slider1') {
+            currentSlide1 = (currentSlide1 + 1) % slides.length;
+            showSlide(currentSlide1, sliderId);
+         } else if (sliderId === 'slider2') {
+            currentSlide2 = (currentSlide2 + 1) % slides.length;
+            showSlide(currentSlide2, sliderId);
+         }
+      }
+
+      // Optional: Create dots for navigation
+      const slides1 = document.querySelectorAll('#slider1 .slide');
+      const dotsContainer1 = document.getElementById('dots-container1');
+      slides1.forEach((_, index) => {
+         const dot = document.createElement('div');
+         dot.className = 'dot';
+         dot.onclick = () => showSlide(index, 'slider1');
+         dotsContainer1.appendChild(dot);
+      });
+
+      const slides2 = document.querySelectorAll('#slider2 .slide');
+      const dotsContainer2 = document.getElementById('dots-container2');
+      slides2.forEach((_, index) => {
+         const dot = document.createElement('div');
+         dot.className = 'dot';
+         dot.onclick = () => showSlide(index, 'slider2');
+         dotsContainer2.appendChild(dot);
+      });
+
+      // Show the initial slides
+      showSlide(currentSlide1, 'slider1');
+      showSlide(currentSlide2, 'slider2');
+   </script>
+</body>
+
+</html>
