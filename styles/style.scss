@@ -64,6 +64,7 @@ section {
     max-width: 470px;
     overflow: hidden;
     padding: 0 15px;
+    min-height: 100vh;
 
     @media (min-width: 471px) {
         overflow: visible;
