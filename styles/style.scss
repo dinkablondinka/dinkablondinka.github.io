@@ -140,6 +140,27 @@ section {
     justify-content: flex-start;
     align-items: center;
 
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url('../assets/img/new/hero.png');
+        background-size: cover;
+        position: absolute;
+        max-width: 550px;
+        top: 130px;
+        left: -80px;
+        right: 0px;
+        bottom: 0px;
+        opacity: 1;
+        overflow: hidden;
+        z-index: 1;
+
+        @media (min-width: 471px) {
+            display: none;
+
+        }
+    }
+
 
     .hero-text_wrapper {
         position: relative;
@@ -163,6 +184,7 @@ section {
 
             }
         }
+
 
         .hero-text_h1 {
             // border: 1px solid red;
@@ -227,16 +249,16 @@ section {
         }
     }
 
-    .hero_img {
-        position: absolute;
-        max-width: 550px;
-        top: 130px;
-        left: -80px;
+    // .hero_img {
+    //     position: absolute;
+    //     max-width: 550px;
+    //     top: 130px;
+    //     left: -80px;
 
-        @media (max-width: 375px) {
-            top: 100px;
-        }
-    }
+    //     @media (max-width: 375px) {
+    //         top: 100px;
+    //     }
+    // }
 
     .hero_btn {
         display: flex;
@@ -259,6 +281,7 @@ section {
         @media (max-width: 438px) {
             margin-top: 15px;
         }
+
         @media (max-width: 375px) {
             margin-top: 30px;
         }
@@ -310,89 +333,89 @@ section {
 
     /******************slider*******************/
 
-.slider-container {
-    position: relative;
-    width: 370px;
-    overflow: hidden;
-    margin-bottom: 45px;
-  }
-  
-  .slider-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  
-  
-  .slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 100%;
-    box-sizing: border-box;
-    height: 650px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50%;
-  }
-  
-  /* Optional: Add styling for navigation buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -25px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* Optional: Add styling for dots navigation */
-  .dots {
-    text-align: center;
-    margin-top: 15px;
-  }
-  
-  .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 8px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .dot.active {
-    background-color: #717171;
-  }
-  
-  #slide-1 {
-    background-image: url('/assets/img/new/1.jpg');
-  }
-  
-  #slide-2 {
-    background-image: url('/assets/img/new/2.jpg');
-  }
-  
-  #slide-3 {
-    background-image: url('/assets/img/new/3.jpg');
-  }
-  
-  #slide-4 {
-    background-image: url('/assets/img/new/4.jpg');
-  }
-  
-  
+    .slider-container {
+        position: relative;
+        width: 370px;
+        overflow: hidden;
+        margin-bottom: 45px;
+    }
+
+    .slider-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+
+
+    .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+        box-sizing: border-box;
+        height: 650px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+
+    /* Optional: Add styling for navigation buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -25px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* Optional: Add styling for dots navigation */
+    .dots {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 8px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .dot.active {
+        background-color: #717171;
+    }
+
+    #slide-1 {
+        background-image: url('/assets/img/new/1.jpg');
+    }
+
+    #slide-2 {
+        background-image: url('/assets/img/new/2.jpg');
+    }
+
+    #slide-3 {
+        background-image: url('/assets/img/new/3.jpg');
+    }
+
+    #slide-4 {
+        background-image: url('/assets/img/new/4.jpg');
+    }
+
+
 }
