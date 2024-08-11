@@ -1,8 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Wulkan Display";
-  src: url("../assets/fonts/WulkanDisplayLight.woff2") format("woff2"), url("../assets/fonts/WulkanDisplayLight.woff") format("woff");
-}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -42,7 +38,7 @@ body::before {
 h1,
 h2,
 h3 {
-  font-family: "Wulkan Display", serif;
+  font-family: "Marck Script", serif;
   color: #757539;
   margin: 0;
 }
@@ -169,9 +165,9 @@ section {
   }
 }
 .hero .hero-text_wrapper .hero-text_h1 {
-  border: 1px solid red;
-  font-size: 40px;
+  font-size: 44px;
   text-align: center;
+  line-height: 40px;
   margin-top: 85px;
   margin-bottom: 0;
   width: 100%;
@@ -195,6 +191,20 @@ section {
 .hero .hero-text_wrapper .hero-text_h2 {
   text-align: right;
   padding: 3px;
+}
+.hero .hero-text_wrapper .caveat-uniqueClassName {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500; /* Встановіть бажану вагу шрифту */
+  font-style: normal;
+  font-size: 45px;
+}
+.hero .hero-text_wrapper .caveat-uniqueClassName-small {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500; /* Встановіть бажану вагу шрифту */
+  font-style: normal;
+  font-size: 30px;
 }
 .hero .hero-text_wrapper .hero-text_1p {
   width: 210px;

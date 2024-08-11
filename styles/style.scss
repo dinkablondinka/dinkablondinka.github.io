@@ -1,10 +1,11 @@
 $border: 1px solid red;
 
-@font-face {
-    font-family: "Wulkan Display";
-    src: url("../assets/fonts/WulkanDisplayLight.woff2") format("woff2"),
-        url("../assets/fonts/WulkanDisplayLight.woff") format("woff");
-}
+// @font-face {
+//     font-family: "Wulkan Display";
+//     src: url("../assets/fonts/WulkanDisplayLight.woff2") format("woff2"),
+//         url("../assets/fonts/WulkanDisplayLight.woff") format("woff");
+// }
+  
 
 * {
     box-sizing: border-box;
@@ -45,7 +46,7 @@ body {
 h1,
 h2,
 h3 {
-    font-family: "Wulkan Display", serif;
+    font-family: "Marck Script", serif;
     color: #757539;
     margin: 0;
 }
@@ -183,11 +184,12 @@ section {
 
 
         .hero-text_h1 {
-            border: 1px solid red;
+            // border: 1px solid red;
             // text-transform: none;
-            font-size: 40px;
+            font-size: 44px;
             text-align: center;
             // letter-spacing: 2px;
+            line-height: 40px;
             margin-top: 85px;
             margin-bottom: 0;
             width: 100%;
@@ -211,6 +213,22 @@ section {
             text-align: right;
             padding: 3px;
         }
+        .caveat-uniqueClassName {
+            font-family: "Caveat", cursive;
+            font-optical-sizing: auto;
+            font-weight: 500; /* Встановіть бажану вагу шрифту */
+            font-style: normal;
+            font-size: 45px
+          }
+
+          .caveat-uniqueClassName-small {
+            font-family: "Caveat", cursive;
+            font-optical-sizing: auto;
+            font-weight: 500; /* Встановіть бажану вагу шрифту */
+            font-style: normal;
+            font-size: 30px
+          }
+          
 
         .hero-text_1p {
             width: 210px;
