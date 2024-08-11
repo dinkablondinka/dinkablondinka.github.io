@@ -169,6 +169,12 @@ section {
     font-size: 33px;
   }
 }
+@media (max-width: 375px) {
+  .hero .hero-text_wrapper .hero-text_h1 {
+    margin-top: 70px;
+    font-size: 30px;
+  }
+}
 .hero .hero-text_wrapper .hero-text_h2 {
   text-align: right;
   padding: 3px;
@@ -205,6 +211,11 @@ section {
   max-width: 550px;
   top: 130px;
   left: -80px;
+}
+@media (max-width: 375px) {
+  .hero .hero_img {
+    top: 100px;
+  }
 }
 .hero .hero_btn {
   display: -webkit-box;

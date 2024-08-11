@@ -170,11 +170,13 @@ section {
             margin-bottom: 0;
             @media (max-width: 438px) {
                 font-size: 35px;
-
             }
             @media (max-width: 393px) {
                 font-size: 33px;
-
+            }
+            @media (max-width: 375px) {
+                margin-top: 70px;
+                font-size: 30px;
             }
 
         }
@@ -221,6 +223,9 @@ section {
         max-width: 550px;
         top: 130px;
         left: -80px;
+        @media (max-width: 375px) {
+            top: 100px;
+        }
     }
 
     .hero_btn {
