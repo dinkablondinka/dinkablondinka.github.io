@@ -197,6 +197,9 @@ section {
   font-style: normal;
   font-size: 45px;
 }
+.hero .hero-text_wrapper .caveat-uniqueClassName span {
+  font-weight: 700;
+}
 .hero .hero-text_wrapper .caveat-uniqueClassName-small {
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
@@ -255,7 +258,7 @@ section {
 }
 .hero .hero_btn {
   position: absolute;
-  bottom: -30px;
+  bottom: -40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,7 +272,7 @@ section {
   color: white;
   text-transform: uppercase;
   height: 80px;
-  width: 280px;
+  width: 290px;
   background: -webkit-gradient(linear, left top, right top, from(#B22222), color-stop(#E74C3C), color-stop(#FFA500), to(#FFD700));
   background: linear-gradient(90deg, #B22222, #E74C3C, #FFA500, #FFD700);
   background-size: 300% 300%;
@@ -418,4 +421,34 @@ section {
 }
 .program #slide-4 {
   background-image: url("/assets/img/new/4.jpg");
+}
+.program #slide-41 {
+  background-image: url("/assets/img/s1.jpg");
+}
+.program .slider-reviews {
+  margin-bottom: 0px;
+  min-height: 250px;
+}
+.program #slider2 {
+  height: 250px;
+}
+.program #slide-5 {
+  background-image: url("../assets/img/reviews/02.jpg");
+  height: 250px;
+}
+.program #slide-6 {
+  background-image: url("../assets/img/reviews/01.jpg");
+  height: 250px;
+}
+.program #slide-7 {
+  background-image: url("../assets/img/reviews/03.jpg");
+  height: 250px;
+}
+.program #slide-8 {
+  background-image: url("../assets/img/reviews/04.jpg");
+  height: 250px;
+}
+.program #slide-9 {
+  background-image: url("../assets/img/reviews/05.jpg");
+  height: 250px;
 }
