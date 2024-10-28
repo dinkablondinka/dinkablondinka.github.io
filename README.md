@@ -1,1 +1,1 @@
-# strunkaiduhovna.github.io
+# https://res1dentevil.github.io/portfolio

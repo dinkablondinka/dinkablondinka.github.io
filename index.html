@@ -1,41 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="keywords" content="">
-   <meta name="description" content="">
-
+   <meta name="keywords"
+      content="">
+   <meta name="description"
+      content="" />
    <link rel="stylesheet" href="./styles/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
    <link rel=”icon” href=”/favicon.ico” type=”image/x-icon”>
-   <title>НАВІГАТОР СХУДНЕННЯ</title>
-
+   <title>Astro Sun&Money</title>
 </head>
 
-
 <body>
-
+   
    <main>
-      <section class="section container hero">
-         <div class="hero-text_wrapper">
-            <h1 class="hero-text_h1"><span class="h1_small"> 21 день </span><br /> <span>Навігатор
-                  схуднення</span></span> <br /> без дієт</h1>
-            <h2 class="hero-text_h2 gradient ">By Valeriia_bol</h2>
-            <p class="hero-text_1p gradient-red">Час вийти з кола дієт, дорогенька!<br /> Їж і худни разом зі мною!</p>
-            <p class="hero-text_p2 gradient-red">власний результат -28 кг</p>
+      <div class="hero">
+         <img class="hero_img" src="./assets/img/hero.png" alt="hero">
+         <div class="btn">ЗАМОВИТИ
+            <img src="./assets/img/Arrow 1.svg" alt="arrow">
          </div>
+      </div>
 
-         <a href="./pages/program.html" class="hero_btn">
-            Приєднатися до програми
-         </a>
-
-      </section>
    </main>
+   <footer>
+     
+   </footer>
 
 
 
@@ -43,76 +39,6 @@
    <script src="./js/wow.min.js"></script>
    <script>
       new WOW().init();
-   </script>
-   <script>
-      let currentSlide1 = 0;
-      let currentSlide2 = 0;
-
-      function showSlide(index, sliderId) {
-         const sliderWrapper = document.getElementById(sliderId);
-         const slides = sliderWrapper.querySelectorAll('.slide');
-         const dotsContainer = document.getElementById(`dots-container${sliderId.charAt(sliderId.length - 1)}`);
-
-         if (sliderId === 'slider1') {
-            currentSlide1 = index;
-         } else if (sliderId === 'slider2') {
-            currentSlide2 = index;
-         }
-
-         sliderWrapper.style.transform = `translateX(${-index * 100}%)`;
-
-         // Optional: Highlight active dot
-         const dots = dotsContainer.querySelectorAll('.dot');
-         dots.forEach(dot => dot.classList.remove('active'));
-         dots[index].classList.add('active');
-      }
-
-      function prevSlide(sliderId) {
-         const sliderWrapper = document.getElementById(sliderId);
-         const slides = sliderWrapper.querySelectorAll('.slide');
-         if (sliderId === 'slider1') {
-            currentSlide1 = (currentSlide1 - 1 + slides.length) % slides.length;
-            showSlide(currentSlide1, sliderId);
-         } else if (sliderId === 'slider2') {
-            currentSlide2 = (currentSlide2 - 1 + slides.length) % slides.length;
-            showSlide(currentSlide2, sliderId);
-         }
-      }
-
-      function nextSlide(sliderId) {
-         const sliderWrapper = document.getElementById(sliderId);
-         const slides = sliderWrapper.querySelectorAll('.slide');
-         if (sliderId === 'slider1') {
-            currentSlide1 = (currentSlide1 + 1) % slides.length;
-            showSlide(currentSlide1, sliderId);
-         } else if (sliderId === 'slider2') {
-            currentSlide2 = (currentSlide2 + 1) % slides.length;
-            showSlide(currentSlide2, sliderId);
-         }
-      }
-
-      // Optional: Create dots for navigation
-      const slides1 = document.querySelectorAll('#slider1 .slide');
-      const dotsContainer1 = document.getElementById('dots-container1');
-      slides1.forEach((_, index) => {
-         const dot = document.createElement('div');
-         dot.className = 'dot';
-         dot.onclick = () => showSlide(index, 'slider1');
-         dotsContainer1.appendChild(dot);
-      });
-
-      const slides2 = document.querySelectorAll('#slider2 .slide');
-      const dotsContainer2 = document.getElementById('dots-container2');
-      slides2.forEach((_, index) => {
-         const dot = document.createElement('div');
-         dot.className = 'dot';
-         dot.onclick = () => showSlide(index, 'slider2');
-         dotsContainer2.appendChild(dot);
-      });
-
-      // Show the initial slides
-      showSlide(currentSlide1, 'slider1');
-      showSlide(currentSlide2, 'slider2');
    </script>
 </body>
 

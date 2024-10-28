@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
     font-family: 'Wulkan Display';
     src: local('Wulkan Display Light'), local('Wulkan-Display-Light'),
         url('WulkanDisplayLight.woff2') format('woff2'),
@@ -6,6 +6,4 @@
         url('WulkanDisplayLight.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
-  } */
-
-  
+  }
