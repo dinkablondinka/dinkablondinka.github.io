@@ -245,7 +245,7 @@ a {
                     }
 
                     input:checked~.tab-content {
-                        max-height: 340px; // Фіксована висота для контенту
+                        max-height: 370px; // Фіксована висота для контенту
                         padding: 1em;
                         // overflow-y: auto; // Скрол у межах блоку
                     }
