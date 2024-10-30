@@ -279,7 +279,7 @@ a {
           transform: rotate(90deg);
 }
 .five-lessons .row .col .tabs .tab input:checked ~ .tab-content {
-  max-height: 300px;
+  max-height: 340px;
   padding: 1em;
 }
 
