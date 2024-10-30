@@ -24,6 +24,27 @@ body {
   }
 }
 
+@-webkit-keyframes h-rotate {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes h-rotate {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
 h1,
 h2,
 h3 {
@@ -136,6 +157,7 @@ a {
   right: 0;
   -webkit-transform: rotate(20deg);
           transform: rotate(20deg);
+  z-index: -1;
 }
 .curse-for-you .curse-for-you_h3 {
   margin-bottom: 15px;
@@ -176,6 +198,7 @@ a {
 .five-lessons .five-lessons_h3 {
   text-align: center;
   margin-bottom: 25px;
+  padding: 0 15px;
 }
 @-webkit-keyframes horizontal-rotate {
   0% {
@@ -258,4 +281,179 @@ a {
 .five-lessons .row .col .tabs .tab input:checked ~ .tab-content {
   max-height: 300px;
   padding: 1em;
+}
+
+/************mini-curse-about**************/
+.mini-curse-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 15px;
+  margin-top: 45px;
+}
+.mini-curse-about .mini-curse-about_text {
+  position: relative;
+  border-radius: 15px;
+  padding: 0 15px;
+  height: 390px;
+  overflow: hidden;
+}
+.mini-curse-about .mini-curse-about_text .mini-curse-about_text_img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -150px;
+  opacity: 0.5;
+}
+.mini-curse-about .mini-curse-about_text .mini-curse-about_text_item {
+  margin-bottom: 5px;
+}
+.mini-curse-about .mini-curse-about_text .mini-curse-about_text_item img {
+  -webkit-animation: h-rotate 2s infinite linear;
+          animation: h-rotate 2s infinite linear;
+  width: 20px;
+  margin-right: 4px;
+}
+.mini-curse-about .mini-curse-about_text h4 {
+  text-align: center;
+  font-style: italic;
+}
+.mini-curse-about .mini-curse-about_text .gradient-text {
+  background: radial-gradient(circle, #d1b685 0%, #e48f10 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.mini-curse-about .mini-curse-about_text p {
+  font-style: italic;
+}
+
+.hero2-img {
+  display: block;
+  width: 90%;
+  margin: 25px auto 0;
+  border-top-left-radius: 85px;
+  border-bottom-right-radius: 85px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.mini-curse-about2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 15px;
+  margin-top: 45px;
+}
+.mini-curse-about2 .mini-curse-about_text {
+  position: relative;
+  border-radius: 15px;
+  padding: 0 15px;
+  height: 390px;
+  overflow: hidden;
+}
+.mini-curse-about2 .mini-curse-about_text .mini-curse-about_text_img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0px;
+  opacity: 0.5;
+}
+.mini-curse-about2 .mini-curse-about_text .mini-curse-about_text_item {
+  margin-bottom: 5px;
+}
+.mini-curse-about2 .mini-curse-about_text .mini-curse-about_text_item img {
+  -webkit-animation: h-rotate 2s infinite linear;
+          animation: h-rotate 2s infinite linear;
+  width: 12px;
+  margin-right: 4px;
+}
+.mini-curse-about2 .mini-curse-about_text h4 {
+  text-align: center;
+  font-style: italic;
+}
+.mini-curse-about2 .mini-curse-about_text .gradient-text {
+  background: radial-gradient(circle, #d1b685 0%, #e48f10 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.mini-curse-about2 .mini-curse-about_text p {
+  font-style: italic;
+}
+
+/**************tariffs***************/
+.tariffs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  padding: 0 15px;
+}
+.tariffs h3 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.tariffs .tariff {
+  position: relative;
+  padding: 0 20px 40px;
+  overflow: hidden;
+  border-radius: 25px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: white;
+  width: 99%;
+}
+.tariffs .tariff_h4 {
+  text-align: center;
+  background: radial-gradient(circle, #d1b685 0%, #e48f10 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.tariffs .tariff_item {
+  margin-bottom: 5px;
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+.tariffs .tariff_item img {
+  width: 11px;
+  margin-right: 3px;
+}
+.tariffs .tariff_bg_img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 1;
+}
+.tariffs .price {
+  text-align: end;
+  font-weight: bold;
+  font-size: 25px;
+  background: radial-gradient(circle, #d1b685 0%, #e48f10 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-top: 25px;
 }
