@@ -11,7 +11,7 @@ body {
     background-color: white;
     width: 100vw;
     overflow-x: hidden;
-    margin-right: calc(-1 * (100vw - 100%));
+    // margin-right: calc(-1 * (100vw - 100%));
     font-family: "Manrope", sans-serif;
     color: rgba(0, 0, 0, 0.692);
     font-size: 16px;
@@ -55,348 +55,363 @@ a {
     padding: 0 5%;
 }
 
-.hero {
-    min-width: 390px;
+@media(max-width: 1920px) {
 
-    .hero_img {
-        width: 100%;
-        ;
-    }
-
-    .btn {
+    .hero {
+        // min-width: 390px;
+        position: relative;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        width: 250px;
-        height: 60px;
-        border-radius: 10px;
-        margin: 25px auto 0;
-        background: radial-gradient(circle, #E9D6B3 0%, #DDBD87 100%);
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        color: rgba(0, 0, 0, 0.692);
-        font-size: 20px;
-        font-family: "Manrope", sans-serif;
-        font-weight: bold;
-        letter-spacing: 0px;
+        flex-direction: row;
 
-        &:hover {
-            cursor: pointer;
-            background: radial-gradient(circle, #E9D6B3 0%, #c2a167 100%);
-            box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+        .hero_img {
+            width: auto;
+            height: 100vh;
+
         }
 
+        .btn {
+            position: absolute;
+            left: 50%;
+            top: 80%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 250px;
+            height: 60px;
+            border-radius: 10px;
+            margin: 25px auto 0;
+            background: radial-gradient(circle, #E9D6B3 0%, #DDBD87 100%);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            color: rgba(0, 0, 0, 0.692);
+            font-size: 20px;
+            font-family: "Manrope", sans-serif;
+            font-weight: bold;
+            letter-spacing: 0px;
+
+            &:hover {
+                cursor: pointer;
+                background: radial-gradient(circle, #E9D6B3 0%, #c2a167 100%);
+                box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+            }
+
+        }
+
+        .about-curse {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+            margin: 50px auto 0;
+            padding: 15px 10px;
+            text-align: center;
+            background-image: none;
+
+            overflow-y: hidden;
+
+            .about-curse_h3 {
+                display: none;
+                margin-bottom: 10px;
+            }
+
+        }
     }
 
-    .about-curse {
+
+    /*************curse-for-you***************/
+
+    .curse-for-you {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 95%;
-        margin: 50px auto 0;
-        padding: 15px 10px;
-        text-align: center;
-        background-image: url('/assets/img/Mask_group.png');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        overflow-y: hidden;
+        margin: 25px auto;
+        padding-bottom: 100px;
 
-        .about-curse_h3 {
+        .curse-for-you_matrix {
+            position: absolute;
+            width: 180px;
+            bottom: 0px;
+            right: 0;
+            transform: rotate(20deg);
+            z-index: -1;
+        }
+
+
+        .curse-for-you_h3 {
+            margin-bottom: 15px;
+        }
+
+        .curse-for-you_text {
+            padding: 0 15px;
+
+            .curse-for-you_text_item {
+                margin-bottom: 2px;
+
+                img {
+                    width: 20px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    /***********five-lessons**************/
+
+    .five-lessons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .five-lessons_h3_img {
+            width: 50px;
             margin-bottom: 10px;
+            animation: horizontal-rotate 2s infinite linear;
         }
 
+        .five-lessons_h3 {
+            text-align: center;
+            margin-bottom: 25px;
+            padding: 0 15px;
+
+            @keyframes horizontal-rotate {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.2);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+        }
+
+        .gradient-text {
+            background: radial-gradient(circle, #d1b685 0%, #e48f10 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+
+        }
+
+
+        .row {
+            width: 95%;
+
+            .col {
+                .tabs {
+                    .tab {
+                        input[type="checkbox"] {
+                            display: none; // Приховуємо чекбокс
+                        }
+
+                        .tab-label {
+                            display: block;
+                            padding: 1em;
+                            background: linear-gradient(90deg, #ff7f5f54 0%, #feb47b27 100%);
+                            cursor: pointer;
+                            font-weight: bold;
+                            color: #333;
+                            margin-bottom: 2px;
+                            border-radius: 15px;
+
+                            img {
+                                width: 20px;
+                            }
+
+                            .nuber3 {
+                                width: 12px;
+                            }
+
+                            .five-lessons-img_matrix {}
+
+                            &::after {
+                                content: "\276F"; // Стрілка справа
+                                float: right;
+                                transition: transform 0.3s ease;
+                            }
+                        }
+
+                        .tab-content {
+                            max-height: 0; // Текст сховано
+                            overflow: hidden;
+                            transition: max-height 0.35s ease;
+                            padding: 0 1em;
+                            color: #333;
+                            background: white;
+                        }
+
+                        // Коли чекбокс натиснуто (відкритий модуль)
+                        input:checked+.tab-label::after {
+                            transform: rotate(90deg); // Поворот стрілки
+                        }
+
+                        input:checked~.tab-content {
+                            max-height: 370px; // Фіксована висота для контенту
+                            padding: 1em;
+                            // overflow-y: auto; // Скрол у межах блоку
+                        }
+                    }
+                }
+
+            }
+        }
     }
-}
 
+    /************mini-curse-about**************/
 
-/*************curse-for-you***************/
-
-.curse-for-you {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
-    margin: 25px auto;
-    padding-bottom: 100px;
-
-    .curse-for-you_matrix {
-        position: absolute;
-        width: 180px;
-        bottom: 0px;
-        right: 0;
-        transform: rotate(20deg);
-        z-index: -1;
-    }
-
-
-    .curse-for-you_h3 {
-        margin-bottom: 15px;
-    }
-
-    .curse-for-you_text {
+    .mini-curse-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding: 0 15px;
+        margin-top: 45px;
 
-        .curse-for-you_text_item {
-            margin-bottom: 2px;
+        .mini-curse-about_text {
+            position: relative;
+            border-radius: 15px;
+            padding: 0 15px;
+            height: 390px;
+            overflow: hidden;
 
-            img {
-                width: 20px;
-                margin-right: 5px;
-            }
-        }
-    }
-}
-
-/***********five-lessons**************/
-
-.five-lessons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .five-lessons_h3_img {
-        width: 50px;
-        margin-bottom: 10px;
-        animation: horizontal-rotate 2s infinite linear;
-    }
-
-    .five-lessons_h3 {
-        text-align: center;
-        margin-bottom: 25px;
-        padding: 0 15px;
-
-        @keyframes horizontal-rotate {
-            0% {
-                transform: scale(1);
+            .mini-curse-about_text_img {
+                width: 120%;
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: -150px;
+                opacity: 0.3;
             }
 
-            50% {
-                transform: scale(1.2);
-            }
-
-            100% {
-                transform: scale(1);
-            }
-        }
-    }
-
-    .gradient-text {
-        background: radial-gradient(circle, #d1b685 0%, #e48f10 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-
-    }
+            .mini-curse-about_text_item {
+                margin-bottom: 5px;
 
 
-    .row {
-        width: 95%;
-
-        .col {
-            .tabs {
-                .tab {
-                    input[type="checkbox"] {
-                        display: none; // Приховуємо чекбокс
-                    }
-
-                    .tab-label {
-                        display: block;
-                        padding: 1em;
-                        background: linear-gradient(90deg, #ff7f5f54 0%, #feb47b27 100%);
-                        cursor: pointer;
-                        font-weight: bold;
-                        color: #333;
-                        margin-bottom: 2px;
-                        border-radius: 15px;
-
-                        img {
-                            width: 20px;
-                        }
-
-                        .nuber3 {
-                            width: 12px;
-                        }
-
-                        .five-lessons-img_matrix {}
-
-                        &::after {
-                            content: "\276F"; // Стрілка справа
-                            float: right;
-                            transition: transform 0.3s ease;
-                        }
-                    }
-
-                    .tab-content {
-                        max-height: 0; // Текст сховано
-                        overflow: hidden;
-                        transition: max-height 0.35s ease;
-                        padding: 0 1em;
-                        color: #333;
-                        background: white;
-                    }
-
-                    // Коли чекбокс натиснуто (відкритий модуль)
-                    input:checked+.tab-label::after {
-                        transform: rotate(90deg); // Поворот стрілки
-                    }
-
-                    input:checked~.tab-content {
-                        max-height: 370px; // Фіксована висота для контенту
-                        padding: 1em;
-                        // overflow-y: auto; // Скрол у межах блоку
-                    }
+                img {
+                    animation: h-rotate 2s infinite linear;
+                    width: 20px;
+                    margin-right: 4px;
                 }
             }
 
-        }
-    }
-}
+            h4 {
+                text-align: center;
+                font-style: italic;
+            }
 
-/************mini-curse-about**************/
+            .gradient-text {
+                background: radial-gradient(circle, #d1b685 0%, #e48f10 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
 
-.mini-curse-about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 15px;
-    margin-top: 45px;
+            }
 
-    .mini-curse-about_text {
-        position: relative;
-        border-radius: 15px;
-        padding: 0 15px;
-        height: 390px;
-        overflow: hidden;
-
-        .mini-curse-about_text_img {
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            left: -150px;
-            opacity: 0.5;
-        }
-
-        .mini-curse-about_text_item {
-            margin-bottom: 5px;
-
-
-            img {
-                animation: h-rotate 2s infinite linear;
-                width: 20px;
-                margin-right: 4px;
+            p {
+                font-style: italic;
             }
         }
-
-        h4 {
-            text-align: center;
-            font-style: italic;
-        }
-
-        .gradient-text {
-            background: radial-gradient(circle, #d1b685 0%, #e48f10 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-
-        }
-
-        p {
-            font-style: italic;
-        }
-    }
-}
-
-.hero2-img {
-    display: block;
-    width: 90%;
-    margin: 25px auto 0;
-    border-top-left-radius: 85px;
-    border-bottom-right-radius: 85px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-
-.mini-curse-about2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 15px;
-    margin-top: 45px;
-
-    .mini-curse-about_text {
-        position: relative;
-        border-radius: 15px;
-        padding: 0 15px;
-        height: 390px;
-        overflow: hidden;
-
-        .mini-curse-about_text_img {
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            left: 0px;
-            opacity: 0.5;
-        }
-
-        .mini-curse-about_text_item {
-            margin-bottom: 5px;
-
-            img {
-                animation: h-rotate 2s infinite linear;
-                width: 12px;
-                margin-right: 4px;
-            }
-        }
-
-        h4 {
-            text-align: center;
-            font-style: italic;
-        }
-
-        .gradient-text {
-            background: radial-gradient(circle, #d1b685 0%, #e48f10 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-
-        }
-
-        p {
-            font-style: italic;
-        }
-    }
-}
-
-
-
-
-/**************tariffs***************/
-.tariffs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    padding: 0 15px;
-    margin-bottom: 60px;
-    h3 {
-        margin-top: 25px;
-        margin-bottom: 20px;
     }
 
-    .tariff {
-        position: relative;
-        padding: 0 20px 40px;
-        overflow: hidden;
-        border-radius: 25px;
+    .hero2-img {
+        display: block;
+        width: 40%;
+        margin: 25px auto 0;
+        border-top-left-radius: 85px;
+        border-bottom-right-radius: 85px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        color: white;
-        width: 99%;
     }
-        
+
+
+    .mini-curse-about2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 15px;
+        margin-top: 45px;
+
+        .mini-curse-about_text {
+            position: relative;
+            border-radius: 15px;
+            padding: 0 15px;
+            height: 390px;
+            overflow: hidden;
+
+            .mini-curse-about_text_img {
+                width: 120%;
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0px;
+                opacity: 0.3;
+            }
+
+            .mini-curse-about_text_item {
+                margin-bottom: 5px;
+
+                img {
+                    animation: h-rotate 2s infinite linear;
+                    width: 12px;
+                    margin-right: 4px;
+                }
+            }
+
+            h4 {
+                text-align: center;
+                font-style: italic;
+            }
+
+            .gradient-text {
+                background: radial-gradient(circle, #d1b685 0%, #e48f10 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+
+            }
+
+            p {
+                font-style: italic;
+            }
+        }
+    }
+
+
+
+
+    /**************tariffs***************/
+    .tariffs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 0 15px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        max-width: 600px;
+
+        h3 {
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+
+        .tariff {
+            position: relative;
+            padding: 0 20px 40px;
+            overflow: hidden;
+            border-radius: 25px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            color: white;
+            width: 99%;
+        }
+
 
         .tariff_h4 {
             text-align: center;
@@ -409,11 +424,13 @@ a {
         .tariff_item {
             margin-bottom: 5px;
             text-shadow: rgb(0, 0, 0) 1px 0 10px;
+
             img {
                 width: 11px;
                 margin-right: 3px;
             }
         }
+
         .tariff_bg_img {
             position: absolute;
             bottom: 0;
@@ -432,6 +449,419 @@ a {
             color: transparent;
             margin-top: 25px;
         }
-    
-    
+
+
+    }
+
+}
+
+
+
+/********MOBILE****************/
+
+
+
+
+
+@media(max-width: 960px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        min-width: 390px;
+
+        .hero_img {
+            width: 100%;
+            height: auto;
+        }
+
+        .btn {
+            position: relative;
+            left: auto;
+            top: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 250px;
+            height: 60px;
+            border-radius: 10px;
+            margin: 25px auto 0;
+            background: radial-gradient(circle, #E9D6B3 0%, #DDBD87 100%);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            color: rgba(0, 0, 0, 0.692);
+            font-size: 20px;
+            font-family: "Manrope", sans-serif;
+            font-weight: bold;
+            letter-spacing: 0px;
+
+            &:hover {
+                cursor: pointer;
+                background: radial-gradient(circle, #E9D6B3 0%, #c2a167 100%);
+                box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+            }
+
+        }
+
+        .about-curse {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+            margin: 50px auto 0;
+            padding: 15px 10px;
+            text-align: center;
+            background-image: url('/assets/img/Mask_group.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            overflow-y: hidden;
+
+            .about-curse_h3 {
+                margin-bottom: 10px;
+            }
+
+        }
+    }
+
+
+    /*************curse-for-you***************/
+
+    .curse-for-you {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        margin: 25px auto;
+        padding-bottom: 100px;
+
+        .curse-for-you_matrix {
+            position: absolute;
+            width: 180px;
+            bottom: 0px;
+            right: 0;
+            transform: rotate(20deg);
+            z-index: -1;
+        }
+
+
+        .curse-for-you_h3 {
+            margin-bottom: 15px;
+        }
+
+        .curse-for-you_text {
+            padding: 0 15px;
+
+            .curse-for-you_text_item {
+                margin-bottom: 2px;
+
+                img {
+                    width: 20px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    /***********five-lessons**************/
+
+    .five-lessons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .five-lessons_h3_img {
+            width: 50px;
+            margin-bottom: 10px;
+            animation: horizontal-rotate 2s infinite linear;
+        }
+
+        .five-lessons_h3 {
+            text-align: center;
+            margin-bottom: 25px;
+            padding: 0 15px;
+
+            @keyframes horizontal-rotate {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.2);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+        }
+
+        .gradient-text {
+            background: radial-gradient(circle, #d1b685 0%, #e48f10 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+
+        }
+
+
+        .row {
+            width: 95%;
+
+            .col {
+                .tabs {
+                    .tab {
+                        input[type="checkbox"] {
+                            display: none; // Приховуємо чекбокс
+                        }
+
+                        .tab-label {
+                            display: block;
+                            padding: 1em;
+                            background: linear-gradient(90deg, #ff7f5f54 0%, #feb47b27 100%);
+                            cursor: pointer;
+                            font-weight: bold;
+                            color: #333;
+                            margin-bottom: 2px;
+                            border-radius: 15px;
+
+                            img {
+                                width: 20px;
+                            }
+
+                            .nuber3 {
+                                width: 12px;
+                            }
+
+                            .five-lessons-img_matrix {}
+
+                            &::after {
+                                content: "\276F"; // Стрілка справа
+                                float: right;
+                                transition: transform 0.3s ease;
+                            }
+                        }
+
+                        .tab-content {
+                            max-height: 0; // Текст сховано
+                            overflow: hidden;
+                            transition: max-height 0.35s ease;
+                            padding: 0 1em;
+                            color: #333;
+                            background: white;
+                        }
+
+                        // Коли чекбокс натиснуто (відкритий модуль)
+                        input:checked+.tab-label::after {
+                            transform: rotate(90deg); // Поворот стрілки
+                        }
+
+                        input:checked~.tab-content {
+                            max-height: 370px; // Фіксована висота для контенту
+                            padding: 1em;
+                            // overflow-y: auto; // Скрол у межах блоку
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    /************mini-curse-about**************/
+
+    .mini-curse-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 15px;
+        margin-top: 45px;
+
+        .mini-curse-about_text {
+            position: relative;
+            border-radius: 15px;
+            padding: 0 15px;
+            height: 390px;
+            overflow: hidden;
+
+            .mini-curse-about_text_img {
+                width: 120%;
+                @media(max-width: 470px) {
+                    position: absolute;
+                    width: auto;
+                    z-index: -1;
+                    top: 0;
+                    left: -150px;
+                    opacity: 0.5;
+                }
+            }
+
+            .mini-curse-about_text_item {
+                margin-bottom: 5px;
+
+
+                img {
+                    animation: h-rotate 2s infinite linear;
+                    width: 20px;
+                    margin-right: 4px;
+                }
+            }
+
+            h4 {
+                text-align: center;
+                font-style: italic;
+            }
+
+            .gradient-text {
+                background: radial-gradient(circle, #d1b685 0%, #e48f10 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+
+            }
+
+            p {
+                font-style: italic;
+            }
+        }
+    }
+
+    .hero2-img {
+        display: block;
+        width: 90%;
+        margin: 25px auto 0;
+        border-top-left-radius: 85px;
+        border-bottom-right-radius: 85px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+
+    .mini-curse-about2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 15px;
+        margin-top: 45px;
+
+        .mini-curse-about_text {
+            position: relative;
+            border-radius: 15px;
+            padding: 0 15px;
+            height: 390px;
+            overflow: hidden;
+
+            .mini-curse-about_text_img {
+                width: 120%;
+                @media(max-width: 470px) {
+                    position: absolute;
+                    width: auto;
+                    z-index: -1;
+                    top: 0;
+                    left: 0px;
+                    opacity: 0.5;
+                }
+            }
+
+            .mini-curse-about_text_item {
+                margin-bottom: 5px;
+
+                img {
+                    animation: h-rotate 2s infinite linear;
+                    width: 12px;
+                    margin-right: 4px;
+                }
+            }
+
+            h4 {
+                text-align: center;
+                font-style: italic;
+            }
+
+            .gradient-text {
+                background: radial-gradient(circle, #d1b685 0%, #e48f10 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+
+            }
+
+            p {
+                font-style: italic;
+            }
+        }
+    }
+
+
+
+
+    /**************tariffs***************/
+    .tariffs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        margin: 0 auto;
+        padding: 0 15px;
+        margin-bottom: 60px;
+        max-width: 600px;
+
+        h3 {
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+
+        .tariff {
+            position: relative;
+            padding: 0 20px 40px;
+            overflow: hidden;
+            border-radius: 25px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            color: white;
+            width: 99%;
+        }
+
+
+        .tariff_h4 {
+            text-align: center;
+            background: radial-gradient(circle, #d1b685 0%, #e48f10 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .tariff_item {
+            margin-bottom: 5px;
+            text-shadow: rgb(0, 0, 0) 1px 0 10px;
+
+            img {
+                width: 11px;
+                margin-right: 3px;
+            }
+        }
+
+        .tariff_bg_img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            opacity: 1;
+        }
+
+        .price {
+            text-align: end;
+            font-weight: bold;
+            font-size: 25px;
+            background: radial-gradient(circle, #d1b685 0%, #e48f10 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-top: 25px;
+        }
+
+
+    }
+
 }
