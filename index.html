@@ -1,200 +1,60 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Матриця Долі | Авторський курс</title>
+    <title>Курс «Шлях Таро» | Стань майстром</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-gradient: radial-gradient(circle at top center, #fff5f5 0%, #ffffff 100%);
-            --accent-color: #1a1a1a;
-            --text-main: #1a1a1a;
-            --text-secondary: #666;
-            --grid-color: rgba(0, 0, 0, 0.03);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-
-        body {
-            background: var(--bg-gradient);
-            color: var(--text-main);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            position: relative;
-        }
-
-        /* Фонова сітка як на скріншоті */
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background-image: 
-                linear-gradient(var(--grid-color) 1px, transparent 1px),
-                linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-            background-size: 40px 40px;
-            z-index: -1;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 600px;
-            padding: 2rem;
-            text-align: center;
-            animation: fadeIn 0.8s ease-out;
-        }
-
-        /* Бейджики */
-        .badge-container {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            margin-bottom: 24px;
-        }
-
-        .badge {
-            padding: 6px 16px;
-            border-radius: 100px;
-            font-size: 14px;
-            font-weight: 600;
-            border: 1px solid rgba(0,0,0,0.08);
-            background: white;
-        }
-
-      
-
-        /* Заголовки */
-        h1 {
-            font-size: clamp(32px, 8vw, 56px);
-            font-weight: 800;
-            line-height: 1.1;
-            letter-spacing: -0.03em;
-            margin-bottom: 20px;
-        }
-
-        p.description {
-            font-size: clamp(16px, 4vw, 20px);
-            color: var(--text-secondary);
-            margin-bottom: 40px;
-            line-height: 1.5;
-            max-width: 450px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Форма */
-        .cta-box {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        input[type="email"] {
-            width: 100%;
-            padding: 18px 24px;
-            border-radius: 16px;
-            border: 1px solid rgba(0,0,0,0.1);
-            font-size: 16px;
-            transition: all 0.3s ease;
-            outline: none;
-            background: rgba(255,255,255,0.8);
-            backdrop-filter: blur(4px);
-        }
-
-        input[type="email"]:focus {
-            border-color: var(--accent-color);
-            box-shadow: 0 0 0 4px rgba(0,0,0,0.05);
-        }
-
-        button {
-            width: 100%;
-            padding: 18px 24px;
-            border-radius: 16px;
-            border: none;
-            background: var(--accent-color);
-            color: white;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: transform 0.2s active, opacity 0.3s;
-        }
-
-        button:hover {
-            opacity: 0.9;
-            transform: translateY(-1px);
-        }
-
-        button:active {
-            transform: translateY(0);
-        }
-
-        .info-footer {
-            margin-top: 24px;
-            font-size: 13px;
-            color: #999;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @media (max-width: 480px) {
-            .container { padding: 1rem; }
-            h1 { margin-bottom: 16px; }
-        }
-    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <section class="container">
-        <div class="badge-container">
-            <span class="badge">Telegram Формат</span>
+    <main class="hero-section">
+        <div class="container">
+            <div class="card-container">
+                <img class="hero_img" src="/assets/001.webp" alt="hero">
+            </div>
+
+            <div class="info">
+                <h1>Курс &laquo;Шлях Таро&raquo;</h1>
+                <h2><span class="span_h2">Перетворіть</span> карти Таро </br> <span class="span_h2">на свій</span>
+                    внутрішній компас <span class="span_h2">та</span> інструмент трансформації</h2>
+                <p>Припиніть вгадувати — почніть бачити! Пройдіть шлях від новачка до майстра, який розуміє
+                    причинно-наслідкові зв'язки подій. Навчіться чути свою інтуїцію через стародавню систему арканів на
+                    курсі «Шлях Таро».</p>
+
+
+                <button class="pay-button" onclick="buyCourse()">
+                    <img class="pay-button_img" src="/assets/icon1.png" alt="icon1">
+                    Придбати курс за <span class="pay-button_span2">2999</span><span class="pay-button_span1">грн</span>
+                </button>
+
+
+
+                <img id="icon01" src="/assets/icons/03.png" alt="icon01">
+                <img id="icon02" src="/assets/icons/02.png" alt="icon02">
+                <!-- <img id="icon03" src="/assets/icons/05.png" alt="icon03"> -->
+            </div>
+
+
         </div>
+    </main>
 
-        <h1>Зміни свою долю за 25 кроків</h1>
-        <p class="description">
-            Глибоке занурення в Матрицю Долі. Отримай розшифровку своєї особистості та доступ до уроків назавжди.
-        </p>
-
-        <div class="cta-box">
-            <input type="email" id="email" placeholder="Ваш Email" required />
-            <button onclick="buyCourse()">Почати навчання за 1 грн</button>
-        </div>
-
-        <p class="info-footer">
-            25 уроків • Доступ миттєво • Підтримка в Telegram
-        </p>
-    </section>
 
     <script>
         async function buyCourse() {
-            const email = document.getElementById("email").value;
-
-            if (!email) {
-                alert("Введіть email");
-                return;
-            }
-
             try {
                 const res = await fetch(
                     "https://createpayment-dwtlhl22ra-uc.a.run.app",
                     {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({ email }),
                     }
                 );
 
@@ -228,4 +88,5 @@
         }
     </script>
 </body>
+
 </html>
