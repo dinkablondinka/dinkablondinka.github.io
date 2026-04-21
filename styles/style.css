@@ -279,13 +279,11 @@ body {
     font-size: 26px;
   }
 }
-.hero .hero__inner .hero__title span {
-  font-size: 21px;
-}
-@media (max-width: 1080px) {
-  .hero .hero__inner .hero__title span {
-    font-size: 17px;
-  }
+.hero .hero__inner .hero__p {
+  font-family: "Cormorant SC", serif;
+  color: #2E2B75;
+  margin-bottom: 15px;
+  font-weight: bold;
 }
 .hero .hero__inner .hero__text {
   margin-bottom: 30px;
@@ -390,6 +388,7 @@ body {
 @media (max-width: 1080px) {
   .form button {
     width: 358px;
+    margin-bottom: 80px;
   }
 }
 
@@ -464,6 +463,7 @@ body {
     margin-top: 0px;
     padding: 10px 10px;
     margin: 0 auto;
+    margin-bottom: 40px;
   }
 }
 .main-wrapper .main-wrapper_container .results .results_content {
@@ -578,7 +578,7 @@ body {
 }
 @media (max-width: 1080px) {
   .main-wrapper .main-wrapper_container .results .results_content .results_content_matrix_wrapper #resultsContent .level-3 {
-    font-size: 13px;
+    font-size: 9px;
   }
 }
 .main-wrapper .main-wrapper_container .results .results_content .results_content_matrix_wrapper #resultsContent .level-4 {
@@ -602,7 +602,7 @@ body {
 }
 @media (max-width: 1080px) {
   .main-wrapper .main-wrapper_container .results .results_content .results_content_matrix_wrapper #resultsContent .level-4 {
-    font-size: 13px;
+    font-size: 9px;
   }
 }
 .main-wrapper .main-wrapper_container .results .results_content .results_content_matrix_wrapper #resultsContent {
@@ -1004,6 +1004,11 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   max-width: 650px;
+}
+@media (max-width: 1080px) {
+  .main-wrapper .main-wrapper_container .health_card .health_card_wrapper {
+    margin-bottom: 60px;
+  }
 }
 .main-wrapper .main-wrapper_container .health_card .health_card_wrapper h2 {
   width: 808px;
@@ -1493,14 +1498,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 25px;
   max-width: 410px;
-  margin: 0px auto;
+  margin: 0px auto 25px;
   border: 1px solid #987733;
   border-radius: 25px;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 .life-map__diamond .life-map__diamond_col1 img {
-  width: 95px;
+  width: 80px;
 }
 .life-map__diamond .life-map__diamond_col2 {
   display: -webkit-box;
@@ -1516,8 +1522,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 90%;
 }
-.life-map__diamond .life-map__diamond_col2 #diamondSoul {
+.life-map__diamond .life-map__diamond_col2 #diamondSoul, .life-map__diamond .life-map__diamond_col2 #giftsSoulCircle, .life-map__diamond .life-map__diamond_col2 #brandCodeCircle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1527,7 +1534,7 @@ body {
           flex-direction: row;
   gap: 8px;
 }
-.life-map__diamond .life-map__diamond_col2 #diamondSoul span {
+.life-map__diamond .life-map__diamond_col2 #diamondSoul span, .life-map__diamond .life-map__diamond_col2 #giftsSoulCircle span, .life-map__diamond .life-map__diamond_col2 #brandCodeCircle span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1541,56 +1548,16 @@ body {
   font-family: "Noto Serif Display", serif;
 }
 .life-map__diamond .life-map__diamond_col2 h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   font-family: "Cormorant SC", serif;
   color: #2E2B75;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 .life-map__diamond .life-map__diamond_col2 span {
   font-size: 18px;
   font-weight: bold;
-}
-.life-map .brand-code {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 25px;
-}
-.life-map .brand-code h3 {
-  font-size: 22px;
-  font-weight: 700;
-  font-family: "Cormorant SC", serif;
-  color: #2E2B75;
-  margin: 25px 0;
-}
-.life-map .brand-code .circle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 2px solid #800060;
-  color: #2D2B75;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 17px;
-  font-weight: 700;
-  font-family: "Noto Serif Display", serif;
-  margin-right: 10px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 .life-map .description-result {
   display: -webkit-box;
