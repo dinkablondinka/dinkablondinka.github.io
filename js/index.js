@@ -277,7 +277,7 @@ form.addEventListener("submit", function (e) {
 
     <div id="manipur1" class="">${results.I}</div>
     <div id="manipur2" class="">${results.I}</div>
-    <div id="manipur3" class="">${reduceTo22(results.G + results.I)}</div>
+    <div id="manipur3" class="">${reduceTo22(results.I + results.I)}</div>
 
     <div id="svadhisthana1" class="">${results.N}</div>
     <div id="svadhisthana2" class="">${results.P}</div>

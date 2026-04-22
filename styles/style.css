@@ -256,14 +256,14 @@ body {
 }
 .hero .hero__inner .hero__subtitle2 {
   font-family: "Nunito sans", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
   margin-bottom: 35px;
   color: #2E2B75;
 }
 @media (max-width: 1080px) {
   .hero .hero__inner .hero__subtitle2 {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 .hero .hero__inner .hero__title {
@@ -1443,7 +1443,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   list-style: none;
-  padding: 0;
+  padding: 0 0 0 3px;
   margin: 0;
 }
 .life-map__list li {
@@ -1485,6 +1485,11 @@ body {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+.life-map .circle_little {
+  width: 34px;
+  height: 34px;
+  font-size: 15px;
+}
 .life-map__diamond {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1524,7 +1529,9 @@ body {
           align-items: center;
   width: 90%;
 }
-.life-map__diamond .life-map__diamond_col2 #diamondSoul, .life-map__diamond .life-map__diamond_col2 #giftsSoulCircle, .life-map__diamond .life-map__diamond_col2 #brandCodeCircle {
+.life-map__diamond .life-map__diamond_col2 #diamondSoul,
+.life-map__diamond .life-map__diamond_col2 #giftsSoulCircle,
+.life-map__diamond .life-map__diamond_col2 #brandCodeCircle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1534,7 +1541,9 @@ body {
           flex-direction: row;
   gap: 8px;
 }
-.life-map__diamond .life-map__diamond_col2 #diamondSoul span, .life-map__diamond .life-map__diamond_col2 #giftsSoulCircle span, .life-map__diamond .life-map__diamond_col2 #brandCodeCircle span {
+.life-map__diamond .life-map__diamond_col2 #diamondSoul span,
+.life-map__diamond .life-map__diamond_col2 #giftsSoulCircle span,
+.life-map__diamond .life-map__diamond_col2 #brandCodeCircle span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1632,11 +1641,12 @@ body {
 }
 .life-map__description {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: bold;
+  color: #2E2B75;
   line-height: 1.5;
   text-align: center;
   max-width: 950px;
-  margin: 30px auto 30px;
+  margin: 100px auto 30px;
   padding: 0px;
 }
 @media (max-width: 1080px) {
@@ -1660,16 +1670,26 @@ body {
   padding: 0;
   font-size: 18px;
 }
-.life-map__description_ul li {
-  width: 500px;
-}
 @media (max-width: 1080px) {
-  .life-map__description_ul li {
+  .life-map__description_ul {
     width: 360px;
     font-size: 16px;
     padding-left: 15px;
     list-style-position: inside;
   }
+}
+.life-map__description_ul li {
+  width: 500px;
+  list-style: none;
+}
+@media (max-width: 1080px) {
+  .life-map__description_ul li {
+    width: 360px;
+  }
+}
+.life-map__description_ul img {
+  width: 20px;
+  vertical-align: middle;
 }
 
 /**********************************/
@@ -1897,6 +1917,11 @@ body {
   font-size: 20px;
   margin-bottom: 15px;
 }
+@media (max-width: 1080px) {
+  #consultation-section .consultation-2 .consultation-2_content-and-photo .consultation_content .consultation-subtitle2 {
+    font-size: 16px;
+  }
+}
 #consultation-section .consultation-2 .consultation-2_content-and-photo .consultation_content .consultation-list {
   list-style: none;
   padding: 0;
@@ -1991,6 +2016,11 @@ body {
   #consultation-section .consultation-2 .consultation-2_content-and-photo .consultation_content .consultation-button::after {
     content: "Консультація IMARIA MASTER";
     /* новий текст */
+  }
+}
+@media (max-width: 1080px) {
+  #consultation-section .consultation-2 .consultation-2_content-and-photo .consultation_content .consultation-button2 {
+    margin-bottom: 80px;
   }
 }
 
@@ -2334,7 +2364,7 @@ body {
   font-size: 16px;
   font-family: "Nunito sans", sans-serif;
   max-width: 420px;
-  color: #494949;
+  color: #2E2B75;
 }
 @media (max-width: 1080px) {
   .footer .footer__right p {
