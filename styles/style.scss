@@ -438,6 +438,21 @@ body {
                     width: 368px;
                 }
 
+                #result-date {
+                    font-family: "Cormorant SC", serif;
+                    font-weight: 700;
+                    font-style: bold;
+                    font-size: 26px;
+                    margin-top: 35px;
+                    color: $primary-color;
+
+                    @media (max-width: 1080px) {
+                        width: 358px;
+                        font-size: 22px;
+                        margin-top: 0px;
+                    }
+                }
+
                 .results_content_matrix_wrapper {
                     // border: 1px solid red;
                     position: relative;
@@ -456,9 +471,12 @@ body {
                         }
                     }
 
+
                     #resultsContent {
                         position: relative;
                         top: 0;
+
+
 
                         .level-1 {
                             position: absolute;
@@ -1280,6 +1298,7 @@ body {
 
         @media (max-width: 768px) {
             text-align: start;
+            font-size: 24px;
         }
     }
 
@@ -1326,8 +1345,13 @@ body {
         }
 
         p {
-            font-size: 20px;
             margin-bottom: 0px;
+            line-height: 17px;
+
+            @media (max-width: 1080px) {
+                font-size: 16px;
+                line-height: 17px;
+            }
 
             span {
                 display: block;
@@ -1458,11 +1482,17 @@ body {
                 margin-bottom: 10px;
                 text-align: center;
             }
+    
 
             span {
                 font-size: 18px;
                 font-weight: bold;
 
+            }
+            p {
+                font-size: 14px;
+                text-align: center;
+                margin-bottom: 10px;
             }
         }
 
@@ -1587,18 +1617,18 @@ body {
     }
 
     &__description_ul {
-        // border: 1px solid red;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
         padding: 0;
         font-size: 18px;
+        
 
         @media (max-width: 1080px) {
             width: 360px;
             font-size: 16px;
-            padding-left: 15px;
+            padding-left: 0px;
             list-style-position: inside;
         }
 
@@ -1910,7 +1940,7 @@ body {
                     }
 
                 }
-            
+
 
                 @media (max-width: 1080px) {
                     .consultation-button .text {
@@ -1924,7 +1954,7 @@ body {
                     }
                 }
 
-                .consultation-button2{
+                .consultation-button2 {
                     @media (max-width: 1080px) {
                         margin-bottom: 80px;
                     }
@@ -2037,9 +2067,11 @@ body {
             background: linear-gradient(45deg, #9F316B, #770f6e);
             color: #fff;
             text-decoration: none;
+            text-align: center;
             border-radius: 0px;
             width: 375px;
-            height: 55px;
+            // height: 55px;
+            height: 65px;
             font-size: 20px;
             // font-weight: 700;
             font-family: "Cormorant SC", serif;

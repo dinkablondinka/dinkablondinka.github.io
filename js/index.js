@@ -5,8 +5,8 @@ const nameError = document.getElementById("nameError");
 const dateError = document.getElementById("dateError");
 const submitBtn = document.getElementById("submitBtn");
 const resultsSection = document.getElementById("result");
+const resultsDate = document.getElementById("result-date");
 const h2_result = document.getElementById("main-wrapper_h2");
-
 const resultsContent = document.getElementById("resultsContent");
 const healthCardResults = document.getElementById("healthCardResults");
 
@@ -26,9 +26,6 @@ const circle12 = document.getElementById("circle12");
 const diamondSoul = document.getElementById("diamondSoul");
 const brandCodeCircle = document.getElementById("brandCodeCircle");
 const giftsSoulCircle = document.getElementById("giftsSoulCircle");
-
-
-
 
 
 
@@ -257,6 +254,8 @@ form.addEventListener("submit", function (e) {
 `
     ;
 
+  resultsDate.innerHTML = `${dateInput.value}`
+
   healthCardResults.innerHTML = `
 
     <div id="sahasrara1" class="">${results.A}</div>
@@ -309,8 +308,8 @@ form.addEventListener("submit", function (e) {
   circle11.innerHTML = `${reduceTo22(reduceTo22(reduceTo22(results.B + results.D) + reduceTo22(results.A + results.C)) + reduceTo22(reduceTo22(results.E + results.G) + reduceTo22(results.F + results.H)))}`;
 
   diamondSoul.innerHTML = `<span class="life-map__circle">${results.healthCardSum2}</span> <span class="life-map__circle">${results.healthCardSum2}</span> <span class="life-map__circle">${reduceTo22(results.healthCardSum2 + results.healthCardSum2)}</span>`
-  brandCodeCircle.innerHTML = `<span class="life-map__circle">${results.T4}</span>`
   giftsSoulCircle.innerHTML = `<span class="life-map__circle">${results.K}</span> <span class="life-map__circle">${results.L}</span> <span class="life-map__circle">${results.M}</span>`
+  brandCodeCircle.innerHTML = `<span class="life-map__circle">${results.T4}</span>`
 
 
 
