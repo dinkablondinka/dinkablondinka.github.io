@@ -9,6 +9,8 @@ const resultsDate = document.getElementById("result-date");
 const h2_result = document.getElementById("main-wrapper_h2");
 const resultsContent = document.getElementById("resultsContent");
 const healthCardResults = document.getElementById("healthCardResults");
+const mandalaResult = document.getElementById("mandalaResult");
+
 
 
 const circle1 = document.getElementById("circle1");
@@ -86,7 +88,7 @@ function validateDate() {
   const date = new Date(isoDate);
   const today = new Date();
   const minDate = new Date("1900-01-01");
-  const maxDate = new Date("2025-12-31");
+  const maxDate = new Date("2027-12-31");
 
   if (isNaN(date.getTime())) {
     dateError.textContent = "Некоректна дата";
@@ -97,7 +99,7 @@ function validateDate() {
     return false;
   }
   if (date < minDate || date > maxDate) {
-    dateError.textContent = "Дата має бути 1900–2025";
+    dateError.textContent = "Дата має бути 1900–2027";
     return false;
   }
 
@@ -153,7 +155,7 @@ function validateDate() {
   const date = new Date(isoDate);
   const today = new Date();
   const minDate = new Date("1900-01-01");
-  const maxDate = new Date("2025-12-31");
+  const maxDate = new Date("2027-12-31");
 
   if (isNaN(date.getTime())) {
     dateError.textContent = "Некоректна дата";
@@ -198,6 +200,7 @@ function processNumber(num) {
 }
 
 
+
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -207,7 +210,6 @@ form.addEventListener("submit", function (e) {
   const isoDate = `${year}-${month}-${day}`;
 
   results = calculateResults(isoDate);
-  console.log(results);
   resultsContent.innerHTML = `
     <div id="A" class="level-1">${results.A}</div>
     <div id="B" class="level-1">${results.B}</div>
@@ -312,9 +314,26 @@ form.addEventListener("submit", function (e) {
   brandCodeCircle.innerHTML = `<span class="life-map__circle">${results.T4}</span>`
 
 
-
   h2_result.scrollIntoView({ behavior: "smooth" });
+
+
+
+  mandalaResult.innerHTML = `
+    <div id="mandala-01" class="mandala_circle-text">${results.D}</div>
+    <div id="mandala-02" class="mandala_circle-text">${results.P}</div>
+    <div id="mandala-03" class="mandala_circle-text">${results.I}</div>
+    <div id="mandala-04" class="mandala_circle-text">${results.S}</div>
+    <div id="mandala-05" class="mandala_circle-text">${results.L}</div>
+    <div id="mandala-06" class="mandala_circle-text">${results.L1}</div>
+    <div id="mandala-07" class="mandala_circle-text">${calculateFigure4Value(results)}</div>
+    <div id="mandala-08" class="mandala_circle-text">${results.I}</div>
+    <div id="mandala-09" class="mandala_circle-text">${results.P}</div>
+    <div id="mandala-10" class="mandala_circle-text">${results.D}</div>
+    <div id="mandala-12" class="mandala_circle-text">${results.healthCardSum2}</div>
+    <div id="mandala-sum" class="mandala_circle-text">${results.healthCardSum2}</div>
+    `;
 });
+
 
 // Бургер меню
 const burger = document.getElementById("burger");
@@ -415,3 +434,23 @@ function calculateResults(dateStr) {
     J1, N1, K1, O1, L1, P1, M1, Q1, R, S, T, T1, T2, T3, T4, healthCardSum1, healthCardSum2, healthCardSum3
   };
 }
+
+  // Розрахунок для кола 7 на основі результату B
+  function calculateFigure4Value(results) {
+    // Отримуємо значення з результатів (рисунок 3, позиція 7)
+    const valueFromFig3 = Number(results.B);
+    console.log(`Значення результату B для кола 7: ${valueFromFig3}`);
+
+    // Перевіряємо, чи входить число в діапазон від 1 до 12
+    if (valueFromFig3 >= 1 && valueFromFig3 <= 12) {
+      // Логіка проста: додаємо 9 (1+9=10, 8+9=17, 12+9=21)
+      return valueFromFig3 + 9;
+    }
+
+    // Якщо значення поза межами 1-12, можна повернути помилку або null
+    console.warn(`Значення результату B поза межами діапазону 1-12: ${valueFromFig3}`);
+    return null;
+  }
+
+
+
