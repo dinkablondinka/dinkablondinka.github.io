@@ -388,11 +388,14 @@ body {
         font-weight: 700;
         font-style: bold;
         font-size: 40px;
+        border-left: 4px solid #8E3B67;
+        padding-left: 22px;
 
         @media (max-width: 1080px) {
             font-size: 26px;
         }
     }
+
 
 
     .main-wrapper_container {
@@ -967,10 +970,13 @@ body {
                     font-size: 32px;
                     margin-bottom: 35px;
                     color: $primary-color;
+                    border-left: 4px solid #8E3B67;
+                    padding-left: 22px;
+                    line-height: 32px;
 
                     @media (max-width: 1080px) {
                         width: 358px;
-                        font-size: 24px;
+                        font-size: 26px;
                     }
                 }
 
@@ -1294,6 +1300,8 @@ body {
         margin-bottom: 35px;
         font-family: "Cormorant SC", serif;
         color: $primary-color;
+        border-left: 4px solid #8E3B67;
+        padding-left: 22px;
 
 
         @media (max-width: 768px) {
@@ -1621,6 +1629,7 @@ body {
             border-left: 4px solid #8E3B67;
             padding-left: 22px;
             height: 52px;
+            
 
             @media (max-width: 1080px) {
                 font-size: 26px;

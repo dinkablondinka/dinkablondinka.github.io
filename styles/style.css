@@ -412,6 +412,8 @@ body {
   font-weight: 700;
   font-style: bold;
   font-size: 40px;
+  border-left: 4px solid #8E3B67;
+  padding-left: 22px;
 }
 @media (max-width: 1080px) {
   .main-wrapper h2 {
@@ -1034,11 +1036,14 @@ body {
   font-size: 32px;
   margin-bottom: 35px;
   color: #2E2B75;
+  border-left: 4px solid #8E3B67;
+  padding-left: 22px;
+  line-height: 32px;
 }
 @media (max-width: 1080px) {
   .main-wrapper .main-wrapper_container .health_card .health_card_wrapper h2 {
     width: 358px;
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 .main-wrapper .main-wrapper_container .health_card .health_card_wrapper .health_card_wrapper_img {
@@ -1376,6 +1381,8 @@ body {
   margin-bottom: 35px;
   font-family: "Cormorant SC", serif;
   color: #2E2B75;
+  border-left: 4px solid #8E3B67;
+  padding-left: 22px;
 }
 @media (max-width: 768px) {
   .life-map__title {
